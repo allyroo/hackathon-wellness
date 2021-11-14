@@ -25,6 +25,8 @@ const Signup = (props) => {
                 <SignupForm />
             </div>
         </div>
+
+        <Footer />
         </React.Fragment>
 
     )
