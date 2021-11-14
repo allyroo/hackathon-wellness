@@ -1,0 +1,28 @@
+.form-class {
+    width: 35vw;
+    /* margin: 10vw auto; */
+}
+
+.form-label {
+    margin-bottom: 3px;
+}
+
+.signup-button {
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .signup-button Button {
+        background-color: #f3d2c1;
+        border: none;
+        color: white;
+    }
+    .signup-button Button:hover {
+        background-color: #8bd3dd;
+    }
+
+.checkbox-label {
+    font-size: 13px;
+}
