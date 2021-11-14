@@ -1,0 +1,33 @@
+.login-form-class {
+    width: 30vw;
+    /* margin: 10vw auto; */
+}
+
+.form-label {
+    margin-bottom: 3px;
+}
+
+.forgot-password-link {
+    text-align: right;
+}
+
+.login-button {
+    margin-top: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .login-button Button {
+        background-color: #f3d2c1;
+        border: none;
+        color: white;
+        padding: 1vh 5vw;
+    }
+    .login-button Button:hover {
+        background-color: #8bd3dd;
+    }
+
+.checkbox-label {
+    font-size: 13px;
+}

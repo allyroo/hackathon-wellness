@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins&family=Roboto+Slab&display=swap');
+
+.signup-page {
+    margin: 5vh auto;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+    .signup-page-left, .signup-page-right  {
+        width: 45vw;
+    }
+
+    .flower-icon {
+        font-size: 200px;
+        margin: 20vh 15vw;
+        color: #f3d2c1;
+        animation: rotation 15s infinite linear;
+    }
+
+    @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(359deg);
+        }
+      }
+
+    .divider {
+        height: 80vh;
+        width: 3px;
+        margin: 2vh 5vw 0;
+        /* background-color: rgba(109, 107, 107, 0.4); */
+        background-color: white;
+        border-radius: 20px;
+    }
+
+
+    .signup-page-right h2 {
+        color: rgb(109, 107, 107);
+        margin-bottom: 3vh;
+        font-weight: bold;
+    }
