@@ -1,0 +1,79 @@
+.hero {
+  background: url("../components/images/hero.jpeg") no-repeat center/cover;
+  height: 650px;
+}
+
+.hero .hero-overlay {
+  background-color: rgba(28, 27, 27, 0.4);
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+.who-we-are {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
+}
+.who-text {
+  background-color: #d0c6c6;
+  text-align: center;
+  height: 650px;
+  flex: 50%;
+}
+
+.who-img {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 650px;
+  flex: 50%;
+}
+
+@media (max-width: 800px) {
+  .who-text,
+  .who-img {
+    flex: 100%;
+  }
+}
+
+img {
+  border-radius: 50%;
+  width: 50%;
+  height: 50%;
+}
+
+.pillars {
+  background: url("../components/images/pillars.jpeg") no-repeat center/cover;
+  height: 650px;
+}
+
+.pillars .pillars-overlay {
+  background-color: rgba(28, 27, 27, 0.4);
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.categories {
+  display: flex;
+  align-items: center;
+}
+
+.habits {
+  background-color: #ffffff;
+  height: 700px;
+}
