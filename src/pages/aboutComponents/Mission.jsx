@@ -22,7 +22,7 @@ const Mission = () => {
                     </p>
                 </Col>
                 <Col className="p-5">
-                    <img src={aboutSvg} alt="about image"  className="img-fluid float-end"/>
+                    <img src={aboutSvg} alt="about image"  className="img-fluid mx-auto d-block mission-svg"/>
                 </Col>
             </Row>
         </Container>

@@ -3,6 +3,9 @@
 .info-container {
     background: #f3d2c1;
     overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .about-heading {
@@ -22,9 +25,8 @@
     margin-bottom: 1.3rem;
 }
 
-
-/*
-.about-img {
-    border-radius: 50%;
+.mission-svg img {
+    border-radius: none !important;
+    width: 100% !important;
+    height: 100% !important;
 }
-*/

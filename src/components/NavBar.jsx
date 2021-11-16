@@ -24,6 +24,7 @@ const NavBar = () => {
             expand="md"
             light
             className="nav-bar"
+            sticky="top"
         >
             <NavbarBrand href="/">
                 <h3>SUPERBLOOM</h3>
