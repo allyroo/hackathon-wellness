@@ -42,18 +42,19 @@ const NavBar = () => {
                             <NavLink href="/about">
                                 About
                             </NavLink>
+                            <NavLink href="signup">
+                                <Button className="button-class" outline>
+                                    Sign Up
+                                </Button>
+                            </NavLink>
+                            <NavLink href="login">
+                                <Button className="button-class" outline>
+                                    Log In
+                                </Button>
+                            </NavLink>
                         </NavItem>
                     </Nav>
-                    <Link to="signup">
-                        <Button className="button-class" outline>
-                            Sign Up
-                        </Button>
-                    </Link>
-                    <Link to="login">
-                        <Button className="button-class" outline>
-                            Log In
-                        </Button>
-                    </Link>
+                    
                 </Collapse>
         </Navbar>
     )

@@ -5,10 +5,10 @@ import './Mission.css';
 
 const Mission = () => {
     return (
-        <Container fluid className="pt-1 ml-2 mr-2 p-1 info-container">
+        <Container fluid className="pt-1 ml-2 mr-2 p-2 info-container">
             <Row xs="1" md="2" className="p-4">
                 <Col  className="text-center p-4 left-col">
-                    <h1 className="about-heading">Our Mission</h1>
+                    <h1 className="heading">Our Mission</h1>
                     <h5 className="about-subheading">More Balance. More Calm. Less Stress.</h5>
                     <p className="about-desc">
                         Our mission is to empower everyone to make the best possible decisions by removing barriers 
@@ -23,7 +23,7 @@ const Mission = () => {
                     </p>
                 </Col>
                 <Col className="p-5">
-                    <img src={aboutSvg} alt="about image"  className="img-fluid mx-auto d-block mission-svg"/>
+                    <img src={aboutSvg} alt="about placeholder"  className="img-fluid mx-auto d-block mission-svg"/>
                 </Col>
             </Row>
         </Container>
