@@ -9,13 +9,12 @@ const Landing = () => {
     <div>
       <NavBar />
 
-      <div style={{ textAlign: "center", margin: "50px" }}>
-        <h1>LANDING PAGE WOOOO</h1>
+      <div style={{ textAlign: "center" }}>
         {/* Hero */}
         <section className="hero">
           <div className="hero-overlay">
-            <h1>Header</h1>
-            <p>
+            <div className="hero-title">LIVE AN EMPOWERED LIFE</div>
+            <div className="hero-subtext">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -23,36 +22,16 @@ const Landing = () => {
               reprehenderit in voluptate velit esse cillum dolore eu fugiat
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+            </div>
           </div>
         </section>
-        {/* Who We Are */}
-        <section className="who-we-are">
-          <div className="who-text">
-            <h1>Who we are</h1>
-            <br />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-          <div className="who-img">
-            <img src={whoweare} />
-          </div>
-        </section>
-        {/* Pillars of Health */}
-        <section className="pillars">
+
+{/* Benefits */}
+<section className="pillars">
           <div className="pillars-overlay">
-            <h1>Pillars of Health</h1>
+            <h1>Bloom with us by focusing on everyday habits</h1>
             <div className="categories">
-              <div>
-                <h3>Nutrition</h3>
-                <img src={whoweare} />
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
+              
               <div>
                 <h3>Movement</h3>
                 <img src={whoweare} />
@@ -80,6 +59,22 @@ const Landing = () => {
             </div>
           </div>
         </section>
+
+        {/* Who We Are */}
+        <section className="who-we-are">
+          <div className="who-text">
+            <h1>Who we are</h1>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div className="who-img">
+            <img src={whoweare} />
+          </div>
+        </section>
+        
         {/* Habit tracking */}
         <section className="habits">
           <div className="who-text">
@@ -91,7 +86,7 @@ const Landing = () => {
             </p>
           </div>
           <div className="who-img">
-            <img src={whoweare} />
+            
           </div>
         </section>
         Hello world
