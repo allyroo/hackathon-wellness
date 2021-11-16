@@ -1,17 +1,27 @@
 .hero {
+  font-family: "Poppins", sans-serif;
   background: url("../components/images/hero.jpeg") no-repeat center/cover;
-  height: 650px;
+  height: 100%;
+  padding-top: 3em;
 }
 
 .hero .hero-overlay {
-  background-color: rgba(28, 27, 27, 0.4);
-  height: 650px;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 40rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: #fff;
+}
+
+.hero-title {
+  font-size: 5em;
+}
+
+.hero-subtext {
+  width: 40%;
 }
 
 * {
@@ -21,10 +31,12 @@
   display: flex;
   flex-wrap: wrap;
   font-size: 30px;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 .who-text {
-  background-color: #d0c6c6;
+  background-color: #495371;
   text-align: center;
   height: 650px;
   flex: 50%;
@@ -53,19 +65,19 @@ img {
 }
 
 .pillars {
-  background: url("../components/images/pillars.jpeg") no-repeat center/cover;
+  background-color:#fff;
   height: 650px;
 }
 
 .pillars .pillars-overlay {
-  background-color: rgba(28, 27, 27, 0.4);
+  
   height: 650px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #fff;
+  color: black;
 }
 
 .categories {
