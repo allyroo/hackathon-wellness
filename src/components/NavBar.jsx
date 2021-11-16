@@ -9,6 +9,7 @@ import {
     NavLink, 
     Button } from 'reactstrap';
 import { Link } from "react-router-dom";
+import { CgMenuRightAlt } from 'react-icons/cg';
 
 import './NavBar.css';
 
@@ -29,30 +30,32 @@ const NavBar = () => {
             <NavbarBrand href="/">
                 <h3>SUPERBLOOM</h3>
             </NavbarBrand>
-            <NavbarToggler onClick={toggle} />
-                <Collapse isOpen={isOpen} navbar>
-                    <Nav
-                        className="me-auto"
-                        navbar
-                    >
-                        <NavItem>
-                        <NavLink href="/home" className="float-end">
+            <CgMenuRightAlt onClick={toggle} className="nav-menu"/>
+            <Collapse isOpen={isOpen} navbar className="dropdown">
+                <Nav
+                    className=""
+                    navbar
+                >
+                    <NavItem className="nav-items">
+                        <NavLink href="/">
                             Home
                         </NavLink>
-                        <NavLink href="/about" className="float-end">
+                        <NavLink href="/about">
                             About
                         </NavLink>
-                        </NavItem>
-                    </Nav>
-                    <Link to="/">
-                        <Button className="button-class" outline>
-                            Sign Up
-                        </Button>
-                    </Link>
-                    <Link to="login">
+                    </NavItem>
+                </Nav>
+                <Link to="signup">
+                    <Button className="button-class" outline>
+                        Sign Up
+                    </Button>
+                </Link>
+                <Link to="login">
+                    <Button className="button-class" outline>
                         Log In
-                    </Link>
-                </Collapse>
+                    </Button>
+                </Link>
+            </Collapse>
         </Navbar>
     )
 }

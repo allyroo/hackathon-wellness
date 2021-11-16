@@ -1,7 +1,33 @@
 .pillars-container {
     background: #fffffe;
+    padding: 3rem;
 }
 
 .pillars-heading {
     color: #001858;
+}
+
+.pillars-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pillars-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pillars-svg {
+    border-radius: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.pillars-svg img{
+    border-radius: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
 }

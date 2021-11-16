@@ -5,20 +5,21 @@ import './Mission.css';
 
 const Mission = () => {
     return (
-        <Container fluid className="pt-5 ml-2 mr-2 p-1 info-container">
+        <Container fluid className="pt-1 ml-2 mr-2 p-1 info-container">
             <Row xs="1" md="2" className="p-4">
-                <Col  className="text-center p-4">
-                    <h1 className="about-heading">Who We Are</h1>
-                    <p className="about-info">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas condimentum lectus, 
-                        id pulvinar tellus fermentum eu. Sed pellentesque, purus eu posuere porta, odio mi mollis 
-                        nisi, in lacinia tellus dui bibendum ante. Pellentesque habitant morbi tristique senectus 
-                        et netus et malesuada fames ac turpis egestas. Mauris at sollicitudin turpis, et ornare orci. 
-                        Integer lacinia gravida urna, in mollis mauris. Pellentesque habitant morbi tristique senectus 
-                        et netus et malesuada fames ac turpis egestas. Donec porta purus felis, nec vulputate eros 
-                        ornare sit amet. Quisque in lorem quam. Suspendisse quis pulvinar augue. Phasellus suscipit 
-                        dolor venenatis porttitor mattis. Vivamus rhoncus dignissim porttitor. Fusce ornare sed enim 
-                        ac vehicula. Donec ultricies, nisl nec hendrerit fermentum, purus nisi consectetur nulla.
+                <Col  className="text-center p-4 left-col">
+                    <h1 className="about-heading">Our Mission</h1>
+                    <h5 className="about-subheading">More Balance. More Calm. Less Stress.</h5>
+                    <p className="about-desc">
+                        Our mission is to empower everyone to make the best possible decisions by removing barriers 
+                        that prevent people from reaching their best inner- and outer- self. <br />
+                        <br />
+                        Acknowledging you need help is often the hardest first step. Deciphering how to maneuver 
+                        around the obstacles of your daily stress can be an overwhelming journey. 
+                        That’s why we’re here to guide you, step by step, to your optimal wellness – 
+                        and help you develop the techniques, emotional awareness and mental pliability to
+                        reduce stress and live a joyous life. We’ll give you the knowledge and support you need, 
+                        so you feel emboldened to whatever may come next.
                     </p>
                 </Col>
                 <Col className="p-5">
