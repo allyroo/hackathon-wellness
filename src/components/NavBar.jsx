@@ -68,6 +68,7 @@ const NavBar = () => {
                 </>
                 }
             </Collapse>
+            
         </Navbar>
     )
 }

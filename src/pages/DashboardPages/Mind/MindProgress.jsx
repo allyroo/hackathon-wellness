@@ -11,6 +11,7 @@ import { IoIosSunny } from 'react-icons/io';
 
 import './MindProgress.css';
 import FlowerIcon from '../../../components/images/flower-icon.svg'
+import Footer from '../../../components/Footer';
 
 const MindProgress = () => {
     const [value, onChange] = useState(new Date());
@@ -78,6 +79,7 @@ const MindProgress = () => {
                 </div>
 
             </div>
+            <Footer />
         </div>
     )
 }

@@ -4,6 +4,7 @@ import { Nav } from 'react-bootstrap';
 import { Button } from 'reactstrap';
 
 import './MindResources.css'
+import Footer from "../../../components/Footer";
 
 const MindResources = () => {
     const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
@@ -44,6 +45,7 @@ const MindResources = () => {
                 </div>
                 
             </div>
+            <Footer />
         </div>
     )
 }
