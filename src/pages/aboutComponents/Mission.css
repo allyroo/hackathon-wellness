@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins&family=Roboto+Slab&display=swap');
+
+.info-container {
+    background: #f3d2c1;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-heading {
+    color: #001858;
+}
+
+.about-subheading {
+    color: #172c66;
+}
+
+.about-subheading::before {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, #8bd3dd, #8bd3dd);
+    display: block;
+    margin-bottom: 1.3rem;
+}
+
+.about-desc {
+    margin-top: 1rem;
+}
+
+.mission-svg {
+    border-radius: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.mission-svg img{
+    border-radius: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+}

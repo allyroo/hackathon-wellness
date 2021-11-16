@@ -5,6 +5,7 @@ import LoginForm from "../components/LoginForm";
 // import { Card } from 'reactstrap';
 
 import NavBar from "../components/NavBar";
+import Footer from '../components/Footer';
 import './Login.css';
 
 const Login = (props) => {
@@ -25,6 +26,9 @@ const Login = (props) => {
                 <BsFlower1 className="flower-icon" />
             </div>
         </div>
+
+        {/* FOOTER on bottom */}
+        <Footer />
         </React.Fragment>
 
     )
