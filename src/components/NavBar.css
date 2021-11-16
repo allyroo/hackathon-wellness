@@ -10,6 +10,8 @@
 .nav-items {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 h3 {
@@ -22,16 +24,14 @@ h3 {
 .button-class {
     background-color: #f582ae;
     border: none;
-    color: #fef6e4;
+    color: #001858;
 }
 
 .button-class:hover {
     background-color: #8bd3dd;
+    color: #001858;
 }
 
-.button-class:first-child {
-    margin-right: 1rem;
-}
 
 .nav-menu {
     display: none;

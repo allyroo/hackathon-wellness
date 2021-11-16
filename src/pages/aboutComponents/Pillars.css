@@ -1,23 +1,32 @@
 .pillars-container {
     background: #fffffe;
     padding: 3rem;
-}
-
-.pillars-heading {
-    color: #001858;
-}
-
-.pillars-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.pillars-col {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.pillars-container .heading {
+    margin-bottom: 3rem;
+}
+
+.about-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pillars-container h4 {
+    color: #172c66;
 }
 
 .pillars-svg {

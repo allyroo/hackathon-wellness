@@ -3,6 +3,7 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Mission from './aboutComponents/Mission';
 import Pillars from './aboutComponents/Pillars';
+import Testimonials from './aboutComponents/Testimonials';
 
 const About = () => {
     return (
@@ -10,6 +11,7 @@ const About = () => {
             <NavBar />
             <Mission />
             <Pillars />
+            <Testimonials />
             <Footer />
         </>
     );

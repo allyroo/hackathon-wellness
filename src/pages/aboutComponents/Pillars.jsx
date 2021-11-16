@@ -8,12 +8,12 @@ import './Pillars.css';
 
 const Pillars = () => {
     return (
-        <Container fluid className="mt-2 p-5 pillars-container">
-            <h1 className="text-center pillars-heading">Pillars of Health</h1>
-            <Row xs="1" sm="2" md="3" lg="4" className="pillars-row">
-                <Col className="pillars-col">
+        <Container fluid className="mt-3 p-5 pillars-container">
+            <h1 className="text-center heading mb-5">Pillars of Health</h1>
+            <Row xs="1"  md="2" lg="4" className="about-row">
+                <Col className="about-col">
                     <img src={nutrition} alt=""  className="pillars-img img-fluid mb-3"/>
-                    <h3>Nutrition</h3>
+                    <h4>Nutrition</h4>
                     <p className="">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas condimentum lectus, 
                         id pulvinar tellus fermentum eu. Sed pellentesque, purus eu posuere porta, odio mi mollis 
@@ -21,9 +21,9 @@ const Pillars = () => {
                         
                     </p>
                 </Col>
-                <Col className="pillars-col">
+                <Col className="about-col">
                     <img src={fitness} alt=""  className="pillars-img img-fluid mb-3"/>
-                    <h3>Fitness</h3>
+                    <h4>Fitness</h4>
                     <p className="">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas condimentum lectus, 
                         id pulvinar tellus fermentum eu. Sed pellentesque, purus eu posuere porta, odio mi mollis 
@@ -31,9 +31,9 @@ const Pillars = () => {
                         
                     </p>
                 </Col>
-                <Col className="pillars-col">
+                <Col className="about-col">
                     <img src={rest} alt=""  className="pillars-img img-fluid mb-3"/>
-                    <h3>Rest/Relaxtion</h3>
+                    <h4>Rest</h4>
                     <p className="">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas condimentum lectus, 
                         id pulvinar tellus fermentum eu. Sed pellentesque, purus eu posuere porta, odio mi mollis 
@@ -41,9 +41,9 @@ const Pillars = () => {
                         
                     </p>
                 </Col>
-                <Col className="pillars-col">
+                <Col className="about-col">
                     <img src={mind} alt=""  className="pillars-img img-fluid mb-3"/>
-                    <h3>Mind</h3>
+                    <h4>Mind</h4>
                     <p className="">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas condimentum lectus, 
                         id pulvinar tellus fermentum eu. Sed pellentesque, purus eu posuere porta, odio mi mollis 
