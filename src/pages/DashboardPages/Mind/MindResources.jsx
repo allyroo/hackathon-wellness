@@ -6,6 +6,9 @@ import { Button } from 'reactstrap';
 import './MindResources.css'
 
 const MindResources = () => {
+    const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
+    console.log(apiKey);
+
     return (
         <div>
             <NavBar />
@@ -30,9 +33,16 @@ const MindResources = () => {
                 {/* Main Content */}
                 <div className="dashboard-content-resources">
                     <h2>from resources page</h2>
+                    <iframe
+                        title="resource-map"
+                        width="350"
+                        height="230"
+                        style={{"border":"0"}}
+                        loading="lazy"
+                        src={`https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=Space+Needle,Seattle+WA`}>
+                    </iframe>
                 </div>
-
-
+                
             </div>
         </div>
     )
