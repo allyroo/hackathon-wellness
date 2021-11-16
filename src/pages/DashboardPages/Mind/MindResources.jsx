@@ -10,6 +10,7 @@ const MindResources = () => {
         <div>
             <NavBar />
             <div className="dashboard-main">
+                {/* Left Menu Bar */}
                 <div className="dashboard-nav">
                     <Nav defaultActiveKey="/" className="dashboard-links flex-column">
                         <Button className="dashboard-button" outline>
@@ -26,7 +27,8 @@ const MindResources = () => {
                         </Button>
                     </Nav>
                 </div>
-                <div className="dashboard-content">
+                {/* Main Content */}
+                <div className="dashboard-content-resources">
                     <h2>from resources page</h2>
                 </div>
 

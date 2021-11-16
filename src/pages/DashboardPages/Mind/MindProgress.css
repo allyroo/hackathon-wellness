@@ -1,25 +1,112 @@
-.dashboard-button {
-    background-color: #f3d2c1;
-    border-color: rgb(0,24,88, 0.5);
-    border-width: 1.5px;
-    padding: 1.5px 5px;
-    margin: 1.5vh 1.5vw;
-}
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins&family=Roboto+Slab&display=swap');
 
-    .dashboard-button:first-child {
-        margin-top: 20vh;
-    }
-
-    .dashboard-button:hover {
-        background-color: #fef6e4;
-    }
+/* .mind-progress-class .dashboard-main{
+    justify-content: space-between;
+} */
 
 
-.link {
-    color: #001858;
+.dashboard-content-progress {
+    /* background-color: #8bd3dd; */
     font-family: 'Poppins', sans-serif;
 }
 
-    .link:hover {
+.dashboard-content-progress {
+    text-align: center;
+    margin: 5vh auto;
+}
+.dashboard-content-progress h2 {
+    font-size: 25px;
+    font-style: italic;
+}
+
+
+/* Overriding React-Calendar styling */
+
+    .react-calendar {
+        border-radius: 10px;
+        border: 3px solid #f3d2c1;
+        padding: 20px 10px;
+        font-family: 'Poppins', sans-serif;
         color: #001858;
+        font-weight: bold;
+    }
+
+
+    .react-calendar__month-view__days__day--weekend {
+        color: #f582ae;
+        font-weight: bolder;
+    }
+
+    .react-calendar button {
+        border-radius: 20px;
+    }
+    .react-calendar__tile--active {
+        background-color: #8bd3dd;
+    }
+
+.progress-calendar {
+    margin-right: 3vw;
+}
+
+.progress-main {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.progress-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.current-goal {
+    width: 40vw;
+    border: 3px solid #8bd3dd;
+    border-radius: 7px;
+}
+.current-goal .card {
+    border: none;
+}
+
+.progress-graphs {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+    .flower-graphics {
+        width: 250px;
+        height: 200px;
+        border: 2px solid #8bd3dd;
+        border-radius: 5px;
+        padding: 20px;
+    }
+
+    .box {
+        width: 50px;
+        height: 80px;
+        background-color: #8bd3dd;
+        margin: 15px auto;
+        border-radius: 5px;
+    }
+
+    .flower-boxes {
+        margin-top: 15px;
+        /* display: flex;
+        justify-content: space-evenly; */
+    }
+
+    .flower-boxes img {
+        width: 50px;
+    }
+
+    .graph-data {
+        width: 280px;
+        height: 200px;
+        border: 2px solid #8bd3dd;
+        border-radius: 10px;
+        margin-left: 3vw;
     }

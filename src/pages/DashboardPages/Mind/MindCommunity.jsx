@@ -10,6 +10,7 @@ const MindCommunity = () => {
         <div>
             <NavBar />
             <div className="dashboard-main">
+                {/* Left Menu Bar */}
                 <div className="dashboard-nav">
                     <Nav defaultActiveKey="/" className="dashboard-links flex-column">
                         <Button className="dashboard-button" outline>
@@ -26,7 +27,8 @@ const MindCommunity = () => {
                         </Button>
                     </Nav>
                 </div>
-                <div className="dashboard-content">
+                {/* Main Content */}
+                <div className="dashboard-content-community">
                     <h2>from community page</h2>
                 </div>
 
