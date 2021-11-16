@@ -35,15 +35,21 @@ const NavBar = () => {
                         navbar
                     >
                         <NavItem>
-                        <NavLink href="/">
+                        <NavLink href="/home" className="float-end">
+                            Home
+                        </NavLink>
+                        <NavLink href="/about" className="float-end">
                             About
                         </NavLink>
                         </NavItem>
                     </Nav>
-                    <Link to="/login">
+                    <Link to="/">
                         <Button className="button-class" outline>
-                            Login
+                            Sign Up
                         </Button>
+                    </Link>
+                    <Link to="login">
+                        Log In
                     </Link>
                 </Collapse>
         </Navbar>
