@@ -8,8 +8,12 @@ import {
 import About from "./pages/About";
 import Dashboard from "./pages/Dashboard";
 import Landing from "./pages/Landing";
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
+import Login from "./pages/RegisterPages/Login";
+import Signup from "./pages/RegisterPages/Signup";
+import MindProgress from './pages/DashboardPages/Mind/MindProgress';
+import MindCommunity from "./pages/DashboardPages/Mind/MindCommunity";
+import MindResources from "./pages/DashboardPages/Mind/MindResources";
+import MindSupport from "./pages/DashboardPages/Mind/MindSupport";
 
 function App() {
   return (
@@ -26,6 +30,22 @@ function App() {
         <Route
           path="/login"
           element={<Login />}
+        />
+        <Route
+          path="/dashboard/progress"
+          element={<MindProgress />}
+        />
+        <Route
+          path="/dashboard/community"
+          element={<MindCommunity />}
+        />
+        <Route
+          path="/dashboard/resources"
+          element={<MindResources />}
+        />
+        <Route
+          path="/dashboard/support"
+          element={<MindSupport />}
         />
         <Route
           path="/dashboard"

@@ -1,11 +1,12 @@
 import React from "react";
 
 import { BsFlower1 } from "react-icons/bs";
-import LoginForm from "../components/LoginForm";
+import LoginForm from "../../components/FormElements/LoginForm";
 // import { Card } from 'reactstrap';
 
-import NavBar from "../components/NavBar";
+import NavBar from "../../components/NavBar";
 import './Login.css';
+import LoginImage from '../../components/images/login.svg';
 
 const Login = (props) => {
 
@@ -22,7 +23,8 @@ const Login = (props) => {
             </div>
             <div className="divider"></div>
             <div className="login-page-right">
-                <BsFlower1 className="flower-icon" />
+                {/* <BsFlower1 className="flower-icon" /> */}
+                <img src ={LoginImage} alt="Login SVG"/>
             </div>
         </div>
         </React.Fragment>

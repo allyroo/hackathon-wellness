@@ -1,0 +1,20 @@
+.dashboard-main {
+    display: flex;
+}
+
+
+.dashboard-button {
+    background-color: #f3d2c1;
+    border-color: rgb(0,24,88, 0.5);
+    border-width: 1.5px;
+    padding: 1.5px 5px;
+    margin: 1.5vh 1.5vw;
+}
+
+    .dashboard-button:first-child {
+        margin-top: 20vh;
+    }
+
+    .dashboard-button:hover {
+        background-color: #fef6e4;
+    }

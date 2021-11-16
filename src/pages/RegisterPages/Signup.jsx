@@ -1,10 +1,11 @@
 import React from "react";
 
-import SignupForm from "../components/SignupForm";
+import SignupForm from "../../components/FormElements/SignupForm";
 import { BsFlower1 } from "react-icons/bs";
 // import { Card } from 'reactstrap';
 
-import NavBar from "../components/NavBar";
+import NavBar from "../../components/NavBar";
+import SignupImage from '../../components/images/signup.svg';
 import './Signup.css';
 
 const Signup = (props) => {
@@ -17,12 +18,13 @@ const Signup = (props) => {
 
         <div className="signup-page">
             <div className="signup-page-left">
-                <BsFlower1 className="flower-icon" />
+                {/* <BsFlower1 className="flower-icon" /> */}
+                <img src ={SignupImage} alt="Signup SVG"/>
             </div>
             <div className="divider"></div>
             <div className="signup-page-right">
                 <h2>Let's Get Started</h2>
-                <SignupForm />
+                <SignupForm/>
             </div>
         </div>
         </React.Fragment>

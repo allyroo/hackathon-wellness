@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins&family=Roboto+Slab&display=swap');
+
+.dashboard-class {
+    font-family: 'Poppins', sans-serif;
+}
+
+.dashboard-main {
+    display: flex;
+}
+
+.dashboard-content {
+    margin-left: 5vw;
+}
+
+.dashboard-row:first-child {
+    margin-top: 30px;
+}
+
+/* remove later */
+.card-example {
+    font-family: 'Poppins', sans-serif;
+}
+
+.image {
+    background-color: #f3d2c1;
+    padding: 10vh 5vw;
+    margin: 10px;
+}
+.pillar2 {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 10px;
+}
