@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Button } from 'reactstrap';
+import { Container, Row, Col, Button, NavLink } from 'reactstrap';
 import woman2 from '../../components/images/women_02.jpg';
 import woman4 from '../../components/images/woman_04.jpg';
 import woman7 from '../../components/images/women_07.jpg';
@@ -34,7 +34,11 @@ const Testimonials = () => {
                 Duis efficitur metus lectus, sed pretium nisi vestibulum ornare. Curabitur 
                 pretium ut diam vel porttitor. Nam sit amet dictum elit, sed pellentesque 
                 est. Quisque at commodo nisi. Praesent quis suscipit nunc."
-                <Button className="join-btn btn-block button-class">Join Today</Button>
+                <a href="signup">
+                    <Button className="join-btn btn-block button-class">
+                        Join Today
+                    </Button>
+                </a>
             </Container>
         </>
     );

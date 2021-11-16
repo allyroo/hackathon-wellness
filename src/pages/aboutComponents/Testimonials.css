@@ -33,7 +33,10 @@
 }
 
 .join-btn {
-    display: inline-block;
     width: 100%;
     margin-top: 4rem;
+}
+
+.bottom-container a {
+    width: 100%;
 }
