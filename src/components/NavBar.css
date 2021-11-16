@@ -7,6 +7,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.nav-items {
+    display: flex;
+    flex-direction: row;
+}
+
 h3 {
     color: #001858;
     /* color: #8bd3dd; */
@@ -22,4 +27,39 @@ h3 {
 
 .button-class:hover {
     background-color: #8bd3dd;
+}
+
+.button-class:first-child {
+    margin-right: 1rem;
+}
+
+.nav-menu {
+    display: none;
+}
+
+.dropdown {
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        display: block;
+        color: #f582ae;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .nav-menu:hover {
+        color: #8bd3dd;
+    }
+    .dropdown {
+        display: flex;
+        flex-direction: column;
+    }
+    .button-class:first-child {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    .nav-items {
+        flex-direction: column;
+    }
 }

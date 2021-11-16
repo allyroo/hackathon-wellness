@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import {
     Navbar, 
     NavbarBrand, 
-    NavbarToggler, 
     Collapse, 
     Nav, 
     NavItem, 
     NavLink, 
     Button } from 'reactstrap';
 import { Link } from "react-router-dom";
+import { CgMenuRightAlt } from 'react-icons/cg';
 
 import './NavBar.css';
 
@@ -24,25 +24,34 @@ const NavBar = () => {
             expand="md"
             light
             className="nav-bar"
+            sticky="top"
         >
             <NavbarBrand href="/">
                 <h3>SUPERBLOOM</h3>
             </NavbarBrand>
-            <NavbarToggler onClick={toggle} />
-                <Collapse isOpen={isOpen} navbar>
+            <CgMenuRightAlt onClick={toggle} className="nav-menu"/>
+                <Collapse isOpen={isOpen} navbar className="dropdown">
                     <Nav
-                        className="me-auto"
+                        className=""
                         navbar
                     >
-                        <NavItem>
-                        <NavLink href="/">
-                            About
-                        </NavLink>
+                        <NavItem className="nav-items"> 
+                            <NavLink href="/">
+                                Home
+                            </NavLink>
+                            <NavLink href="/about">
+                                About
+                            </NavLink>
                         </NavItem>
                     </Nav>
-                    <Link to="/login">
+                    <Link to="signup">
                         <Button className="button-class" outline>
-                            Login
+                            Sign Up
+                        </Button>
+                    </Link>
+                    <Link to="login">
+                        <Button className="button-class" outline>
+                            Log In
                         </Button>
                     </Link>
                 </Collapse>

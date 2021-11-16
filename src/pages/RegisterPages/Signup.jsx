@@ -7,6 +7,7 @@ import { BsFlower1 } from "react-icons/bs";
 import NavBar from "../../components/NavBar";
 import SignupImage from '../../components/images/signup.svg';
 import './Signup.css';
+import Footer from "../../components/Footer";
 
 const Signup = (props) => {
 
@@ -27,6 +28,9 @@ const Signup = (props) => {
                 <SignupForm/>
             </div>
         </div>
+
+        {/* FOOTER on bottom */}
+        <Footer />
         </React.Fragment>
 
     )

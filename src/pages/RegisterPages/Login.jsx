@@ -7,6 +7,7 @@ import LoginForm from "../../components/FormElements/LoginForm";
 import NavBar from "../../components/NavBar";
 import './Login.css';
 import LoginImage from '../../components/images/login.svg';
+import Footer from "../../components/Footer";
 
 const Login = (props) => {
 
@@ -27,6 +28,9 @@ const Login = (props) => {
                 <img src ={LoginImage} alt="Login SVG"/>
             </div>
         </div>
+
+        {/* FOOTER on bottom */}
+        <Footer />
         </React.Fragment>
 
     )
