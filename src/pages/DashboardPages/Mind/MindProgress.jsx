@@ -70,7 +70,7 @@ const MindProgress = () => {
                                     </div>
                                 </div>
                                 <div className="graph-data">
-                                    graph data
+                                    progress
                                         <div className="box" style={{ "height": `${count*10}%` }}>{count*10}%</div>
                                 </div>
                             </div>
