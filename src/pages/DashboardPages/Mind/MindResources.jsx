@@ -54,7 +54,7 @@ const MindResources = (props) => {
                             className="map-class"
                             title="resource-map"
                             style={{ "border": "0" }}
-                            loading="lazy"
+                            // loading="lazy"
                             src={`https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=therapy+in+Seattle`}>
                         </iframe>
                         <div className="resources-directory">
