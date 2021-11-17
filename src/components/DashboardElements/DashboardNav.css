@@ -4,13 +4,32 @@
 .dashboard-nav {
     background-color: #f3d2c1;
     padding: 10px;
-    height: 85vh;
+    height: 100vh;
 
     /* to center vertically */
     /* display: flex;
 	height: 100vh;
 	flex-direction: column;
 	justify-content: center; */
+}
+
+.dashboard-dropdown-class {
+    margin: 7vh auto;
+}
+.dashboard-dropdown-class .pillar-dropdown {
+    margin: 0 2vw;
+}
+
+.dashboard-nav h6 a {
+    color: #001858;
+}
+.dashboard-nav h6 {
+    margin-top: 8vh;
+    text-align: center;
+}
+
+.dashboard-links {
+    margin-top: -17vh;
 }
 
 

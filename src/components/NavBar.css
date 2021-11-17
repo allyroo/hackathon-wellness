@@ -63,24 +63,3 @@ h3 {
         flex-direction: column;
     }
 }
-
-.pillar-dropdown {
-    margin-left: 20px;
-}
-
-.pillar-dropdown-toggle {
-    width: 10vw;
-    text-align: center;
-    background-color: #8bd3dd;
-    border: none;
-    font-weight: bold;
-    font-size: 18px;
-}
-.pillar-dropdown-toggle:hover {
-    background-color: #f3d2c1;
-}
-
-
-.pillar-dropdown-menu {
-    background-color: white;
-}

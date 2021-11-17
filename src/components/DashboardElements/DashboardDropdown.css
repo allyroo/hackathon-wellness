@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins&family=Roboto+Slab&display=swap');
+
+.pillar-dropdown {
+    font-family: 'Poppins', sans-serif;
+    /* margin-left: 20px; */
+    display: flex;
+    align-items: center;
+}
+
+.pillar-dropdown-toggle {
+    width: 10vw;
+    text-align: center;
+    background-color: #8bd3dd;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+.pillar-dropdown-toggle:hover {
+    background-color: darkgray;
+}
+
+
+.pillar-dropdown-menu {
+    background-color: white;
+}

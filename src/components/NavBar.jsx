@@ -54,31 +54,7 @@ const NavBar = () => {
                     ? <div style={{ "display": "flex", "alignItems": "center", "marginLeft": "20px" }}>
                         <Avatar />
                         <h5>Hi Sophie!</h5>
-                        <div className="pillar-dropdown">
-                            {/* https://react-bootstrap.github.io/components/dropdowns/ 
-                            (only react-bootstrap dropdown works) */}
-                            <Dropdown>
-                                <Dropdown.Toggle variant="secondary" className="pillar-dropdown-toggle" id="dropdown-basic" >
-                                    {pathname.includes('mind') 
-                                    ? "Mind" 
-                                    : pathname.includes('fitness')
-                                    ? "Fitness"
-                                    : pathname.includes('rest')
-                                    ? "Rest"
-                                    : pathname.includes('nutrition')
-                                    ? "Nutrition"
-                                    : "Pillar Menu"
-                                }
-                                </Dropdown.Toggle>
-                                <Dropdown.Menu>
-                                    <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/mind">Mind</Dropdown.Item>
-                                    <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/fitness">Fitness</Dropdown.Item>
-                                    <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/rest">Rest</Dropdown.Item>
-                                    <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/nutrition">Nutrition</Dropdown.Item>
-                                </Dropdown.Menu>
-                            </Dropdown>
-
-                        </div>
+                        {/* Dropdown */}
                     </div>
                     : <>
                         <NavLink href="/signup">
