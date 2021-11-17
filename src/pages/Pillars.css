@@ -1,27 +1,36 @@
 .pillar-container {
   display: flex;
   justify-content: space-evenly;
+  text-align: center;
+  height: 85vh;
 }
 
 .nutrition-p {
-  background-color: dodgerblue;
+  background-color: #f3d2c1;
   padding: 10px;
+
   flex: 25%;
 }
 .fitness-p {
-  background-color: dodgerblue;
+  background-color: #8bd3dd;
   padding: 10px;
   flex: 25%;
 }
 .rest-p {
-  background-color: dodgerblue;
+  background-color: #55689b;
   padding: 10px;
   flex: 25%;
 }
 .mind-p {
-  background-color: dodgerblue;
+  background-color: #c9c0ac;
   padding: 10px;
   flex: 25%;
+}
+
+.pill-img {
+  border-radius: 50%;
+  height:100%;
+  background-color: #fff;
 }
 
 @media (max-width: 800px) {
