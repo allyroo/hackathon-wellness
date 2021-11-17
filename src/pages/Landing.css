@@ -1,12 +1,11 @@
 .hero {
   font-family: "Poppins", sans-serif;
-  background: url("../components/images/hero.jpeg") no-repeat center/cover;
+  background: url("../components/images/hero.jpg") no-repeat center/cover;
   height: 100%;
-  padding-top: 3em;
 }
 
 .hero .hero-overlay {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(171, 132, 132, 0.4);
   height: 40rem;
   display: flex;
   flex-direction: column;
@@ -27,7 +26,57 @@
 * {
   box-sizing: border-box;
 }
-.who-we-are {
+
+.bloom {
+  height: 100%;
+  letter-spacing: 5px;
+}
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  vertical-align: middle;
+}
+.product-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 40%;
+  text-align: center;
+  min-height: 650px;
+  background-color: #e6b6b6;
+  align-items: center;
+  flex: 50%;
+  vertical-align: middle;
+  font-size: 0.7em;
+}
+
+.product-head {
+  font-family: "Poppins", sans-serif;
+  width: 60%;
+  font-size: 2rem;
+}
+.product-img {
+  background-color: #fabcd4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 650px;
+  flex: 50%;
+}
+@media (max-width: 800px) {
+  .product-text,
+  .prodcut-img {
+    flex: 100%;
+  }
+}
+
+.dash-container {
   display: flex;
   flex-wrap: wrap;
   font-size: 30px;
@@ -35,14 +84,14 @@
   justify-content: center;
   text-align: center;
 }
-.who-text {
-  background-color: #495371;
+.dash-img {
+  background-color: #ffffff;
   text-align: center;
-  height: 650px;
+
   flex: 50%;
 }
 
-.who-img {
+.dash-txt {
   background-color: #ffffff;
   display: flex;
   align-items: center;
@@ -51,41 +100,57 @@
   flex: 50%;
 }
 
-@media (max-width: 800px) {
-  .who-text,
-  .who-img {
-    flex: 100%;
-  }
-}
-
 img {
-  border-radius: 50%;
   width: 50%;
-  height: 50%;
+  height: 100%;
 }
 
-.pillars {
-  background-color:#fff;
-  height: 650px;
-}
-
-.pillars .pillars-overlay {
-  
-  height: 650px;
+.dash {
+  height: 700px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: black;
+  color: white;
 }
 
-.categories {
+.title {
+  font-family: "Poppins", sans-serif;
+  font-size: 2em;
+}
+
+/* .categories {
   display: flex;
   align-items: center;
+} */
+
+.how-to {
+  background-color: #d2e2e0;
+  height: 3000px;
+  color: white;
 }
 
-.habits {
-  background-color: #ffffff;
-  height: 700px;
+.how-title {
+  padding-top: 100px;
+  padding-bottom: 25px;
+  border-top: black 1px solid;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  color: #001858;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.pillar {
+  padding-bottom: 75px;
+}
+.pillar-img-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.pillar-img {
+  flex: 50%;
+  background-color: transparent;
 }
