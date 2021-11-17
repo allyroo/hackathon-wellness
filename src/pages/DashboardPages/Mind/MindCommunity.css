@@ -1,3 +1,7 @@
+.community-nav {
+    min-height: 100vh;
+}
+
 .dashboard-button {
     background-color: #f3d2c1;
     border-color: rgb(0,24,88, 0.5);
@@ -6,10 +10,111 @@
     margin: 1.5vh 1.5vw;
 }
 
-    .dashboard-button:first-child {
-        margin-top: 20vh;
-    }
+.dashboard-button:first-child {
+    margin-top: 20vh;
+}
 
-    .dashboard-button:hover {
-        background-color: #fef6e4;
-    }
+.dashboard-button:hover {
+    background-color: #fef6e4;
+}
+
+.dashboard-content-community {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 2rem;
+    min-height: 100vh;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.top-heading {
+    color: #001858;
+    font-family: 'Poppins', sans-serif;
+}
+
+.add {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.add-btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color: rgb(233, 233, 233);
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 4em;
+  }
+  
+  .search input {
+    border: none;
+    background-color: transparent;
+  }
+  
+  .search input:focus, 
+  .theme-switch:focus {
+    outline: none;
+  }
+  
+  .search-icon {
+    color: #001858;
+  }
+
+.community-filters ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    list-style: none;
+}
+
+.community-filters ul li {
+    cursor: pointer;
+    transition: all .5s ease;
+    border: 2px solid #8bd3dd;
+    border-radius: 5px;
+    padding: .5rem 1rem;
+    text-align: center;  
+    margin-right: 1rem;
+}
+
+.community-filters ul li:hover,
+.community-filters ul li.active {
+    background: #8bd3dd;
+}
+
+.all-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    margin-top: 1rem;
+    grid-gap: 8px;
+    width: 100%;
+}
+
+.tags {
+    background-color: #fef6e4;
+    color: #001858;
+    border: none;
+    margin-right: 1rem;
+}
+
+.tags:hover {
+    background-color: #fef6e4;
+    color: #001858;
+}
