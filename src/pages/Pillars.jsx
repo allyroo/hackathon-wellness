@@ -14,20 +14,28 @@ const PillarSelection = () => {
       <NavBar />
       <div className="pillar-container">
         <div className="nutrition-p">
-          <div className="pill-img"><img src={food} /><br/>Nutrition</div>
-          
+          <div className="pill-img">
+            <img src={food} />
+          </div>
+          <div className="pill">Nutrition</div>
         </div>
         <div className="fitness-p">
-          <div className="pill-img"><img src={exercise} /></div>
-          Fitness
+          <div className="pill-img">
+            <img src={exercise} />
+          </div>
+          <div className="pill">Fitness</div>
         </div>
         <div className="rest-p">
-          <div className="pill-img"><img src={relax} /></div>
-          Rest
+          <div className="pill-img">
+            <img src={relax} />
+          </div>
+          <div className="pill">Rest</div>
         </div>
         <div className="mind-p">
-          <div className="pill-img"><img src={mental} /></div>
-          Mind
+          <div className="pill-img">
+            <img src={mental} />
+          </div>
+          <div className="pill">Mind</div>
         </div>
       </div>
 
