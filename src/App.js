@@ -1,16 +1,12 @@
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 import About from "./pages/About";
 import Dashboard from "./pages/Dashboard";
 import Landing from "./pages/Landing";
 import Login from "./pages/RegisterPages/Login";
 import Signup from "./pages/RegisterPages/Signup";
-import MindProgress from './pages/DashboardPages/Mind/MindProgress';
+import PillarSelection from "./pages/Pillars";
+import MindProgress from "./pages/DashboardPages/Mind/MindProgress";
 import MindCommunity from "./pages/DashboardPages/Mind/MindCommunity";
 import MindResources from "./pages/DashboardPages/Mind/MindResources";
 import MindSupport from "./pages/DashboardPages/Mind/MindSupport";
@@ -34,6 +30,9 @@ function App() {
           path="/login"
           element={<Login />}
         />
+        <Route 
+          path="/selectpillar" 
+          element={<PillarSelection />} />
         <Route
           path="/dashboard/mind"
           element={<MindDashboard />}

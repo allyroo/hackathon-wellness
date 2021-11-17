@@ -1,7 +1,15 @@
 import { Link } from "react-router-dom";
 import whoweare from "../components/images/whoweare.png";
-import pillars from "../components/images/pillars.jpeg";
+import dashboard from "../components/images/dashboard.jpg";
+import exercise from "../components/images/exercise.svg";
+import mental from "../components/images/mental.svg";
+import relax from "../components/images/relax.svg";
+import food from "../components/images/food.svg";
+import community from "../components/images/community.svg";
+import tracker from "../components/images/tracker.svg";
+import support from "../components/images/support.svg";
 import NavBar from "../components/NavBar";
+import { BsFlower1 } from "react-icons/cg";
 import "./Landing.css";
 
 const Landing = () => {
@@ -16,77 +24,68 @@ const Landing = () => {
             <div className="hero-title">LIVE AN EMPOWERED LIFE</div>
             <div className="hero-subtext">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </div>
           </div>
         </section>
-
-{/* Benefits */}
-<section className="pillars">
-          <div className="pillars-overlay">
-            <h1>Bloom with us by focusing on everyday habits</h1>
-            <div className="categories">
-              
-              <div>
-                <h3>Movement</h3>
-                <img src={whoweare} />
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-              <div>
-                <h3>Sleep</h3>
-                <img src={whoweare} />
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-              <div>
-                <h3>Relaxation</h3>
-                <img src={whoweare} />
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-            </div>
+        {/* breaker bloom text */}
+        <section className="bloom">
+          <div className="title">
+            sprout with us. bloom with us. thrive with us.{" "}
           </div>
         </section>
-
         {/* Who We Are */}
-        <section className="who-we-are">
-          <div className="who-text">
-            <h1>Who we are</h1>
-            <br />
+        <section className="product">
+          <div className="product-text">
+            <div className="product-head">
+              Your one-stop shop for better mental health.
+            </div>
+
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
-          <div className="who-img">
-            <img src={whoweare} />
+          <div className="product-img">
+            <img className="dash-img" src={dashboard} />
           </div>
         </section>
-        
-        {/* Habit tracking */}
-        <section className="habits">
-          <div className="who-text">
-            <h1>Who we are</h1>
-            <br />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+        <section className="bloom">
+          <div className="title">
+            Dig at the roots instead of hacking at the leaves.{" "}
           </div>
-          <div className="who-img">
-            
+        </section>
+        <section className="how-to">
+          {/* <div className="categories"> */}
+
+          <div className="pillar">
+            <div className="how-title">Choose a pillar</div>
+            <div className="pillar-img-container">
+              <div className="pillar-img">
+                <img src={food} />
+              </div>
+              <div className="pillar-img">
+                <img src={exercise} />
+              </div>
+              <div className="pillar-img">
+                <img src={relax} />
+              </div>
+              <div className="pillar-img">
+                <img src={mental} />
+              </div>
+            </div>
+          </div>
+          <div className="track">
+            <div className="how-title">Track your progress</div>
+            <img src={tracker} />
+          </div>
+          <div className="provider">
+            <div className="how-title">Lean on the professionals</div>
+            <img src={support} />
+          </div>
+          <div className="community">
+            <div className="how-title">Connect with the community</div>
+            <img src={community} />
           </div>
         </section>
         Hello world
