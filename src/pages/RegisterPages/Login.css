@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins&family=Roboto+Slab&display=swap');
 
 .login-page {
+    /* min-height: 80vh; */
     margin: 5vh auto;
     display: flex;
     justify-content: space-around;
