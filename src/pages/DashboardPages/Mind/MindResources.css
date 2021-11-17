@@ -7,17 +7,7 @@
     align-items: center;
     justify-content: space-around;
 }
-.support-group-class {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.map-class {
-    border-radius: 10px;
-    width: 30vw;
-    height: 35vh;
-}
 
 .resources-directory h3 {
     margin-top: 4vh;
@@ -34,34 +24,10 @@
     margin-left: 7px;
 }
 
-.directory-list {
-    border: 3px solid rgb(179, 174, 174);
-    border-radius: 5px;
-    padding: 8px 12px;
-    width: 35vw;
-    height: 25vh;
-    overflow: scroll;
-}
-
-.directory-list a {
-    white-space: nowrap; 
-    color: #172c66;
-}
 
 
-/* make scrollbar always visible - directory */
-.directory-list::-webkit-scrollbar {
-    -webkit-appearance: none;
-}
-.directory-list::-webkit-scrollbar:horizontal {
-    height: 0;
-}
 
-.directory-list::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    border: 3px solid white; /* should match background, can't be transparent */
-    background-color: rgba(0, 0, 0, .4);
-}
+
 
 .article-class {
     margin-top: 8vh;

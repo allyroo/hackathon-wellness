@@ -12,6 +12,8 @@ import { IoIosSunny } from 'react-icons/io';
 import './MindProgress.css';
 import FlowerIcon from '../../../components/images/flower-icon.svg'
 import Footer from '../../../components/Footer';
+import DashboardNav from '../../../components/DashboardElements/DashboardNav';
+import MindSmartGoal from '../../../components/MindComponents/MindSmartGoal';
 
 const MindProgress = () => {
     const [value, onChange] = useState(new Date());
@@ -21,23 +23,7 @@ const MindProgress = () => {
         <div className="mind-progress-class">
             <NavBar />
             <div className="dashboard-main">
-                {/* Left Menu Bar */}
-                <div className="dashboard-nav">
-                    <Nav defaultActiveKey="/" className="dashboard-links flex-column">
-                        <Button className="dashboard-button" outline style={{ "backgroundColor": "#001858" }}>
-                            <Nav.Link href="/dashboard/progress" className="link" style={{ "color": "#fef6e4" }}>Progress</Nav.Link>
-                        </Button>
-                        <Button className="dashboard-button" outline>
-                            <Nav.Link href="/dashboard/community" className="link">Community</Nav.Link>
-                        </Button>
-                        <Button className="dashboard-button" outline>
-                            <Nav.Link href="/dashboard/resources" className="link">Resources</Nav.Link>
-                        </Button>
-                        <Button className="dashboard-button" outline>
-                            <Nav.Link href="/dashboard/support" className="link">Support</Nav.Link>
-                        </Button>
-                    </Nav>
-                </div>
+                <DashboardNav />
 
                 {/* Main Content */}
                 <div className="dashboard-content-progress">
@@ -49,18 +35,7 @@ const MindProgress = () => {
                             className="progress-calendar"
                         />
                         <div className="progress-details">
-                            <div className="current-goal">
-                                <Card className="card">
-                                    <CardBody>
-                                        <CardTitle tag="h5">
-                                            <IoIosSunny /> Mind: Current Smart Goal
-                                        </CardTitle>
-                                        <CardText>
-                                            This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                                        </CardText>
-                                    </CardBody>
-                                </Card>
-                            </div>
+                            <MindSmartGoal />
                             <div className="progress-graphs">
                                 <div className="flower-graphics">
                                     <Button onClick={() => setCount(count + 1)} color="secondary" outline>Goal Completed</Button>

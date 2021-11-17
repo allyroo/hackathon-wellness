@@ -3,7 +3,7 @@
 .signup-page {
     margin: 5vh auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-content: center;
     font-family: 'Poppins', sans-serif;
 }
@@ -35,14 +35,13 @@
         }
       }
 
-    .divider {
+    /* .divider {
         height: 80vh;
         width: 3px;
         margin: 2vh 5vw 0;
-        /* background-color: rgba(109, 107, 107, 0.4); */
         background-color: white;
         border-radius: 20px;
-    }
+    } */
 
 
     .signup-page-right h2 {

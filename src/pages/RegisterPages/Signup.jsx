@@ -22,7 +22,7 @@ const Signup = (props) => {
                 {/* <BsFlower1 className="flower-icon" /> */}
                 <img src ={SignupImage} alt="Signup SVG"/>
             </div>
-            <div className="divider"></div>
+            {/* <div className="divider"></div> */}
             <div className="signup-page-right">
                 <h2>Let's Get Started</h2>
                 <SignupForm/>

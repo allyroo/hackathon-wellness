@@ -1,0 +1,8 @@
+.current-goal {
+    width: 40vw;
+    border: 3px solid #8bd3dd;
+    border-radius: 7px;
+}
+.current-goal {
+    border: none;
+}

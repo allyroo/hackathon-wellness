@@ -14,6 +14,9 @@ import MindProgress from './pages/DashboardPages/Mind/MindProgress';
 import MindCommunity from "./pages/DashboardPages/Mind/MindCommunity";
 import MindResources from "./pages/DashboardPages/Mind/MindResources";
 import MindSupport from "./pages/DashboardPages/Mind/MindSupport";
+import MindDashboard from "./pages/DashboardPages/Mind/MindDashboard";
+import FitnessDashboard from "./pages/DashboardPages/Fitness/FitnessDashboard";
+import FitnessProgress from "./pages/DashboardPages/Fitness/FitnessProgress";
 
 function App() {
   return (
@@ -32,20 +35,32 @@ function App() {
           element={<Login />}
         />
         <Route
-          path="/dashboard/progress"
+          path="/dashboard/mind"
+          element={<MindDashboard />}
+        />
+        <Route
+          path="/dashboard/mind/progress"
           element={<MindProgress />}
         />
         <Route
-          path="/dashboard/community"
+          path="/dashboard/mind/community"
           element={<MindCommunity />}
         />
         <Route
-          path="/dashboard/resources"
+          path="/dashboard/mind/resources"
           element={<MindResources />}
         />
         <Route
-          path="/dashboard/support"
+          path="/dashboard/mind/support"
           element={<MindSupport />}
+        />
+        <Route
+          path="/dashboard/fitness"
+          element={<FitnessDashboard />}
+        />
+        <Route
+          path="/dashboard/fitness/progress"
+          element={<FitnessProgress />}
         />
         <Route
           path="/dashboard"
