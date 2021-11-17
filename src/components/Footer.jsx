@@ -6,7 +6,7 @@ import './Footer.css';
 
 const Footer = () => {
     return (
-        <Navbar sticky="bottom" className="footer">
+        <Navbar fixed="bottom" className="footer">
             <NavbarBrand href="/">
                 <h3>SUPERBLOOM</h3>
             </NavbarBrand>

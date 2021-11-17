@@ -20,7 +20,7 @@ const MindCommunity = () => {
         <div>
             <NavBar />
             <div className="dashboard-main">
-                <DashboardNav className="community-nav" />
+                <DashboardNav />
 
                 {/* Main Content */}
                 <div className="dashboard-content-community">
