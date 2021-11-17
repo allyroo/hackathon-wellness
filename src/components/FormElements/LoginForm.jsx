@@ -16,7 +16,7 @@ const LoginForm = (props) => {
         // login process
 
         // navigate to dashboard page
-        navigate('/dashboard');
+        navigate('/dashboard/mind');
     }
 
     return (

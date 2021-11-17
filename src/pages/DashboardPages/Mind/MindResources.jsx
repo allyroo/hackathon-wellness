@@ -7,65 +7,25 @@ import { Link } from "react-router-dom";
 
 import './MindResources.css'
 import Footer from "../../../components/Footer";
+import DashboardNav from "../../../components/DashboardElements/DashboardNav";
+import MindResourcesDirectory from "../../../components/MindComponents/MindResourcesDirectory";
+import MindResourceMap from "../../../components/MindComponents/MindResourceMap";
 
 const MindResources = (props) => {
-    const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
-    console.log(apiKey);
-
-    const directory_data = [
-        { id: 'list-01', text: 'Mindful Therapy Group - Northgate', website: 'https://www.mindfultherapygroup.com/' },
-        { id: 'list-02', text: 'Seattle Anxiety Specialists, PLLC - Psychiatry & Psychotherapy', website: 'seattleanxiety.com' },
-        { id: 'list-03', text: 'MEND Seattle', website: "https://mendseattle.com/" },
-        { id: 'list-04', text: 'Seattle Couples Counseling™ & Group Therapy Seattle™', website: 'http://seattlecouplescounseling.com/seattlecouplescounseling.com/Welcome.html' },
-        { id: 'list-05', text: "Women's Therapy Groups of Seattle", website: 'http://www.womenstherapygroupsseattle.com/' },
-        { id: 'list-01', text: 'Mindful Therapy Group - Northgate', website: 'https://www.mindfultherapygroup.com/' },
-        { id: 'list-02', text: 'Seattle Anxiety Specialists, PLLC - Psychiatry & Psychotherapy', website: 'seattleanxiety.com' },
-        { id: 'list-03', text: 'MEND Seattle', website: "https://mendseattle.com/" },
-        { id: 'list-04', text: 'Seattle Couples Counseling™ & Group Therapy Seattle™', website: 'http://seattlecouplescounseling.com/seattlecouplescounseling.com/Welcome.html' },
-        { id: 'list-05', text: "Women's Therapy Groups of Seattle", website: 'http://www.womenstherapygroupsseattle.com/' },
-    ]
 
     return (
         <div>
             <NavBar />
             <div className="dashboard-main">
-                {/* Left Menu Bar */}
-                <div className="dashboard-nav">
-                    <Nav defaultActiveKey="/" className="dashboard-links flex-column">
-                        <Button className="dashboard-button" outline>
-                            <Nav.Link href="/dashboard/progress" className="link">Progress</Nav.Link>
-                        </Button>
-                        <Button className="dashboard-button" outline>
-                            <Nav.Link href="/dashboard/community" className="link">Community</Nav.Link>
-                        </Button>
-                        <Button className="dashboard-button" outline style={{ "backgroundColor": "#001858" }}>
-                            <Nav.Link href="/dashboard/resources" className="link" style={{ "color": "#fef6e4" }}>Resources</Nav.Link>
-                        </Button>
-                        <Button className="dashboard-button" outline>
-                            <Nav.Link href="/dashboard/support" className="link">Support</Nav.Link>
-                        </Button>
-                    </Nav>
-                </div>
+                <DashboardNav />
                 {/* Main Content */}
                 <div className="dashboard-content-resources">
                     {/* Map and Directory */}
                     <div className="support-group-class">
-                        <iframe
-                            className="map-class"
-                            title="resource-map"
-                            style={{ "border": "0" }}
-                            loading="lazy"
-                            src={`https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=therapy+in+Seattle`}>
-                        </iframe>
+                        <MindResourceMap />
                         <div className="resources-directory">
                             <h3><BsGeoAltFill className="directory-icon" />Directory<BsGeoAltFill className="directory-icon" /></h3>
-                            <div className="directory-list">
-                                {directory_data.map(place =>
-                                    <a href={`${place.website}`} target="_blank" rel="noopener noreferrer">
-                                        <h6>{place.text}</h6>
-                                    </a>
-                                )}
-                            </div>
+                            <MindResourcesDirectory />
                         </div>
                     </div>
                 </div>

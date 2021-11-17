@@ -22,7 +22,6 @@ const Login = (props) => {
                 <h2>Welcome Back!</h2>
                 <LoginForm />
             </div>
-            <div className="divider"></div>
             <div className="login-page-right">
                 {/* <BsFlower1 className="flower-icon" /> */}
                 <img src ={LoginImage} alt="Login SVG"/>

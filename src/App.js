@@ -10,22 +10,67 @@ import MindProgress from "./pages/DashboardPages/Mind/MindProgress";
 import MindCommunity from "./pages/DashboardPages/Mind/MindCommunity";
 import MindResources from "./pages/DashboardPages/Mind/MindResources";
 import MindSupport from "./pages/DashboardPages/Mind/MindSupport";
+import MindDashboard from "./pages/DashboardPages/Mind/MindDashboard";
+import FitnessDashboard from "./pages/DashboardPages/Fitness/FitnessDashboard";
+import FitnessProgress from "./pages/DashboardPages/Fitness/FitnessProgress";
 
 function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/about" element={<About />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/selectpillar" element={<PillarSelection />} />
-        <Route path="/dashboard/progress" element={<MindProgress />} />
-        <Route path="/dashboard/community" element={<MindCommunity />} />
-        <Route path="/dashboard/resources" element={<MindResources />} />
-        <Route path="/dashboard/support" element={<MindSupport />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/" element={<Landing />} />
-      </Routes>
+      < Routes >
+        <Route 
+          path="/about"
+          element={<About />}
+        />
+        <Route
+          path="/signup"
+          element={<Signup />}
+        />
+        <Route
+          path="/login"
+          element={<Login />}
+        />
+        <Route 
+          path="/selectpillar" 
+          element={<PillarSelection />} />
+        <Route
+          path="/dashboard/mind"
+          element={<MindDashboard />}
+        />
+        <Route
+          path="/dashboard/mind/progress"
+          element={<MindProgress />}
+        />
+        <Route
+          path="/dashboard/mind/community"
+          element={<MindCommunity />}
+        />
+        <Route
+          path="/dashboard/mind/resources"
+          element={<MindResources />}
+        />
+        <Route
+          path="/dashboard/mind/support"
+          element={<MindSupport />}
+        />
+        <Route
+          path="/dashboard/fitness"
+          element={<FitnessDashboard />}
+        />
+        <Route
+          path="/dashboard/fitness/progress"
+          element={<FitnessProgress />}
+        />
+        <Route
+          path="/dashboard"
+          element={<Dashboard />}
+        />
+        <Route
+          path="/"
+          element={<Landing />}
+        />
+
+      </Routes >
     </Router>
   );
 }

@@ -1,0 +1,12 @@
+
+.support-group-class {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map-class {
+    border-radius: 10px;
+    width: 30vw;
+    height: 35vh;
+}
