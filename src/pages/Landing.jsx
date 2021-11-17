@@ -61,17 +61,25 @@ const Landing = () => {
           <div className="pillar">
             <div className="how-title">Choose a pillar</div>
             <div className="pillar-img-container">
-              <div className="pillar-img">
-                <img src={food} />
+              <div className="box">
+                <div className="pillar-img">
+                  <img src={food} />
+                </div>
               </div>
-              <div className="pillar-img">
-                <img src={exercise} />
+              <div className="box">
+                <div className="pillar-img">
+                  <img src={exercise} />
+                </div>
               </div>
-              <div className="pillar-img">
-                <img src={relax} />
+              <div className="box">
+                <div className="pillar-img">
+                  <img src={relax} />
+                </div>
               </div>
-              <div className="pillar-img">
-                <img src={mental} />
+              <div className="box">
+                <div className="pillar-img">
+                  <img src={mental} />
+                </div>
               </div>
             </div>
           </div>

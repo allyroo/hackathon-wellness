@@ -1,29 +1,55 @@
 .pillar-container {
   display: flex;
   justify-content: space-evenly;
+  text-align: center;
+  height: 85vh;
 }
-
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 .nutrition-p {
-  background-color: dodgerblue;
+  background-color: #f3d2c1;
   padding: 10px;
   flex: 25%;
 }
 .fitness-p {
-  background-color: dodgerblue;
+  background-color: #8bd3dd;
   padding: 10px;
   flex: 25%;
 }
 .rest-p {
-  background-color: dodgerblue;
+  background-color: #55689b;
   padding: 10px;
   flex: 25%;
 }
 .mind-p {
-  background-color: dodgerblue;
+  background-color: #c9c0ac;
   padding: 10px;
   flex: 25%;
 }
 
+.pill-img {
+  margin-top: 20vh;
+  border-radius: 50%;
+  height: 50%;
+  background-color: #fef6e4;
+  flex-direction: row;
+  align-items: center;
+  border: rgb(185, 179, 179);
+}
+.pill-img:hover {
+  border: rgb(230, 117, 117) double 120px;
+}
+
+.pill {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  padding: 1em;
+}
 @media (max-width: 800px) {
   .nutrition-p,
   .fitness-p,
