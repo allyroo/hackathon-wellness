@@ -32,6 +32,16 @@ h3 {
     color: #001858;
 }
 
+.outline-btn {
+    background: #fef6e4;
+    border: 2px solid #f582ae;
+}
+
+.outline-btn:hover {
+    background: #f582ae;
+    border: 2px solid transparent;
+}
+
 
 .nav-menu {
     display: none;
