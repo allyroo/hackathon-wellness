@@ -6,7 +6,7 @@
 
 .hero .hero-overlay {
   background-color: rgba(171, 132, 132, 0.4);
-  height: 40rem;
+  height: 50rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -49,7 +49,7 @@
   width: 40%;
   text-align: center;
   min-height: 650px;
-  background-color: #e6b6b6;
+  background-color: #f3d2c1;
   align-items: center;
   flex: 50%;
   vertical-align: middle;
@@ -62,7 +62,7 @@
   font-size: 2rem;
 }
 .product-img {
-  background-color: #fabcd4;
+  background-color: #f3d2c1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,6 +89,11 @@
   text-align: center;
 
   flex: 50%;
+}
+
+.box1 {
+  margin: auto;
+  border-radius: 5px;
 }
 
 .dash-txt {
@@ -134,7 +139,7 @@ img {
 .how-title {
   padding-top: 100px;
   padding-bottom: 25px;
-  border-top: black 1px solid;
+
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
   text-align: center;
@@ -148,9 +153,11 @@ img {
 }
 .pillar-img-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 .pillar-img {
   flex: 50%;
   background-color: transparent;
+  padding-bottom: 30px;
 }
