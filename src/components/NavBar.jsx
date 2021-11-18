@@ -66,7 +66,7 @@ const NavBar = () => {
                             </Button>
                         </NavLink>
                         <NavLink href="/login">
-                            <Button className="button-class" outline>
+                            <Button className="button-class outline-btn" outline>
                                 Log In
                             </Button>
                         </NavLink>

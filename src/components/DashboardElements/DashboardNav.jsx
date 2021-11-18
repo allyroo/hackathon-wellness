@@ -28,6 +28,14 @@ const DashboardNav = (props) => {
         pillar = 'nutrition/'
     }
 
+    const mindStyles = {
+        backgroundColor: "#c9c0ac"
+    }
+
+    const fitnessStyles = {
+        backgroundColor: "#8bd3dd"
+    }
+
     // switch(pathname.includes(pillar)) {
     //     case pillar === "mind":
     //         pillar = 'mind/'
@@ -46,7 +54,7 @@ const DashboardNav = (props) => {
     // }
 
     return (
-        <div className="dashboard-nav">
+        <div className="dashboard-nav" style={pathname.includes('mind') ? mindStyles : fitnessStyles}>
             <div className="dashboard-dropdown-class" >
                 <DashboardDropdown />
             </div>

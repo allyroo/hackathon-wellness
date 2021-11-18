@@ -1,5 +1,5 @@
 .community-nav {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .dashboard-button {
@@ -26,6 +26,7 @@
     width: 100%;
     padding: 0 2rem;
     min-height: 100vh;
+    margin-bottom: 2rem;
 }
 
 .top {
@@ -114,6 +115,10 @@
     margin-top: 1rem;
     grid-gap: 8px;
     width: 100%;
+}
+
+.post {
+    background: #f5f5f5;
 }
 
 .tags {
