@@ -24,10 +24,37 @@ const DashboardDropdown = (props) => {
                     }
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
-                    <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/mind">Mind</Dropdown.Item>
-                    <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/fitness">Fitness</Dropdown.Item>
-                    <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/rest">Rest</Dropdown.Item>
-                    <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/nutrition">Nutrition</Dropdown.Item>
+                    {pathname.includes('mind')
+                        ? <>
+                            <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/nutrition">Nutrition</Dropdown.Item>
+                            <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/fitness">Fitness</Dropdown.Item>
+                            <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/rest">Rest</Dropdown.Item>
+                        </>
+                        : pathname.includes('fitness')
+                            ? <>
+                                <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/nutrition">Nutrition</Dropdown.Item>
+                                <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/rest">Rest</Dropdown.Item>
+                                <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/mind">Mind</Dropdown.Item>
+                            </>
+                            : pathname.includes('rest')
+                                ? <>
+                                    <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/nutrition">Nutrition</Dropdown.Item>
+                                    <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/fitness">Fitness</Dropdown.Item>
+                                    <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/mind">Mind</Dropdown.Item>
+                                </>
+                                : pathname.includes('nutrition')
+                                    ? <>
+                                        <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/fitness">Fitness</Dropdown.Item>
+                                        <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/rest">Rest</Dropdown.Item>
+                                        <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/mind">Mind</Dropdown.Item>
+                                    </>
+                                    : <>
+                                        <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/nutrition">Nutrition</Dropdown.Item>
+                                        <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/fitness">Fitness</Dropdown.Item>
+                                        <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/rest">Rest</Dropdown.Item>
+                                        <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/mind">Mind</Dropdown.Item>
+                                    </>
+                    }
                 </Dropdown.Menu>
             </Dropdown>
 

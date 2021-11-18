@@ -11,6 +11,7 @@ import MindSmartGoal from '../../../components/MindComponents/MindSmartGoal';
 import MindResourcesDirectory from '../../../components/MindComponents/MindResourcesDirectory';
 import MindResourceMap from '../../../components/MindComponents/MindResourceMap';
 import Footer from '../../../components/Footer';
+import MindFlowerTracker from '../../../components/MindComponents/MindFlowerTracker';
 
 const MindDashboard = (props) => {
 
@@ -26,46 +27,37 @@ const MindDashboard = (props) => {
                                 <MindSmartGoal />
                             </div>
                         </NavLink>
-                        <div className="mind-dashboard-flower-class">
-                            {/* from https://codepen.io/lili/pen/RpoLWM */}
-                            <div className="main-dashboard-flower">
-
-                                <div class="container">
-                                    <div class="center"></div>
-                                    <div class="stem"></div>
-                                    <div class="leaf leaf-right"></div>
-                                    <div class="leaf leaf-left"></div>
-                                    <div class="petal petal1"></div>
-                                    <div class="petal petal2"></div>
-                                    <div class="petal petal3"></div>
-                                    <div class="petal petal4"></div>
-                                    <div class="petal petal5"></div>
+                        <Link to="/dashboard/mind/progress" style={{ "textDecoration": "none"}} >
+                            <div className="mind-dashboard-flower-class">
+                                {/* from https://codepen.io/lili/pen/RpoLWM */}
+                                <MindFlowerTracker />
+                                <div className="flower-progress-box">
+                                    <div className="flower-progress-water-level">
+                                        <div className="progress-percentage">30%</div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="flower-progress-box">
-                                <div className="flower-progress-water-level">30%</div>
-                            </div>
 
-                        </div>
+                            </div>
+                        </Link>
                     </div>
                     <div className="mind-dashboard-right-col">
-                    <NavLink to="/dashboard/mind/resources" style={{ "textDecoration": "none", "color": "#172c66" }}>
-                        <div className="mind-dashboard-right-top">
+                            <div className="mind-dashboard-right-top">
 
-                            <h3>Local Resources</h3>
-                            <div className="mind-dashboard-local-resources">
-                                <div className="mind-resources-map">
-                                    <MindResourceMap />
-                                </div>
-                                <div className="mind-resources-directory" >
-                                    <h5>* List of resources</h5>
-                                    <MindResourcesDirectory />
+                        <NavLink to="/dashboard/mind/resources" style={{ "textDecoration": "none", "color": "#172c66" }}>
+                                <h3>Local Resources</h3>
+                        </NavLink>
+                                <div className="mind-dashboard-local-resources">
+                                    <div className="mind-resources-map">
+                                        <MindResourceMap />
+                                    </div>
+                                    <div className="mind-resources-directory" >
+                                        <h5>* List of resources</h5>
+                                        <MindResourcesDirectory />
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </NavLink>
                         <div className="mind-dashboard-bottom-right">
-                            reflection/progress
+                            <h3>Reflection</h3>
                         </div>
                     </div>
                 </div>

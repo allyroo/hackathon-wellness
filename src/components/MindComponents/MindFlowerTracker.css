@@ -1,0 +1,67 @@
+
+.container {
+    font-size: 2vw;
+    position: relative;
+    margin-top: -4vh;
+}
+.center {
+    width: 1.75em;
+    height: 1.75em;
+    border-radius: 50%;
+    background: #8A5124;
+    position: absolute;
+    z-index: 1;
+    top: 4em;
+    left: 4em;
+}
+.petal {
+    width: 1.75em;
+    height: 1.75em;
+    border-radius: 50%;
+    background: RGB(255,218,3);
+    position: absolute;
+}
+.petal1 {
+    top: 2.8em;
+    left: 4em;
+}
+.petal2 {
+    top: 3.5em;
+    left: 5.3em;
+}
+.petal3 {
+    top: 5em;
+    left: 5em;
+}
+.petal4 {
+    top: 5em;
+    left: 3.2em;
+}
+.petal5 {
+    top: 3.5em;
+    left: 2.8em;
+}
+.stem {
+    width: .3em;
+    height: 6em;
+    background: #99c14a;
+    position: absolute;
+    top: 5.5em;
+    left: 4.8em;
+}
+.leaf {
+    position: absolute;
+    width: 2.5em;
+    height: 1.2em;
+    background: #99c14a;
+    border-radius: 0 100% 0 100%;
+    top: 8em;
+}
+.leaf-right {
+    left: 4.7em;
+    transform: rotate(-60deg);
+}
+.leaf-left {
+    left: 2.7em;
+    transform: scale(1,-1) rotate(-60deg);
+}

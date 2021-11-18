@@ -1,15 +1,4 @@
-/* remove later */
-.card-example {
-    font-family: 'Poppins', sans-serif;
-}
-
-.image {
-    background-color: #f3d2c1;
-    padding: 10vh 5vw;
-    margin: 10px;
-}
-.pillar2 {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 30px 10px;
+.fitness-dashboard-goal {
+    margin-top: 10vh;
+    margin-left: 15vw;
 }

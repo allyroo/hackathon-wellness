@@ -15,8 +15,11 @@
 }
 
 .dashboard-content-progress {
-    /* background-color: #8bd3dd; */
     font-family: 'Poppins', sans-serif;
+}
+
+.dashboard-content-progress .dashboard-nav {
+    height: 60vh;
 }
 
 .dashboard-content-progress {
@@ -26,8 +29,8 @@
 .dashboard-content-progress h2 {
     font-size: 25px;
     font-style: italic;
+    margin-top: 5vh;
 }
-
 
 /* Overriding React-Calendar styling */
 
@@ -80,40 +83,57 @@
 .progress-graphs {
     margin-top: 5vh;
     display: flex;
-    justify-content: space-between;
+    /* align-items: center; */
+    /* justify-content: space-around; */
+}
+
+.progress-button-class {
+    width: 20vw;
+    /* height: 200px; */
+    /* border: 2px solid #8bd3dd; */
+    background-color: rgb(243,210,193, 0.4);
+    border-radius: 10px;
+    margin-left: -5vw;
+    margin-right: 2vw;
+    padding: 5vh 2vw;
+}
+.progress-button-class h5{
+    font-size: 1.5vw;
+    margin-bottom: 5vh;
+}
+
+    /* input:checked + .flower-graphics {
+         background: linear-gradient(to bottom,
+        red 20%, orange 20% 40%, yellow 40% 60%, green 60% 80%, blue 80%);
+        
+    } */
+    
+    .flower-graphics img {
+        width: 30vw;
+    }
+    
+.flower-progress-container {
+    width: 15vw;
+    height: 17vh;
+    /* height: 150px; */
+    position: relative;
 }
 
 
-    .flower-graphics {
-        width: 250px;
-        height: 200px;
-        border: 2px solid #8bd3dd;
-        border-radius: 5px;
-        padding: 20px;
-    }
-
-    .box {
-        width: 50px;
-        height: 80px;
-        background-color: #8bd3dd;
-        margin: 15px auto;
-        border-radius: 5px;
-    }
-
-    .flower-boxes {
-        margin-top: 15px;
-        /* display: flex;
-        justify-content: space-evenly; */
-    }
-
-    .flower-boxes img {
-        width: 50px;
-    }
-
-    .graph-data {
-        width: 280px;
-        height: 200px;
-        border: 2px solid #8bd3dd;
-        border-radius: 10px;
-        margin-left: 3vw;
-    }
+.flower-graphics {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    /* background-color: #8bd3dd; */
+    /* background: linear-gradient(to bottom,
+    white 60%, #8bd3dd 60%); */
+    /* background: linear-gradient(to bottom,
+    red 20%, orange 20% 40%, yellow 40% 60%, green 60% 80%, blue 80%); */
+}
+.overlay {
+    z-index: 0;
+    /* background-color: white; */
+  }

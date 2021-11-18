@@ -96,7 +96,7 @@ const DashboardNav = (props) => {
                     >Support</Nav.Link>
                 </Button>
             </Nav>
-            <h6><a href={`/dashboard/${pillar}`}>Back to Main Menu <BsBoxArrowInUpRight className="article-link-icon" /></a></h6>
+            <h6><a href={`/dashboard/${pillar}`}>Back to Overview <BsBoxArrowInUpRight className="article-link-icon" /></a></h6>
 
         </div>
     )

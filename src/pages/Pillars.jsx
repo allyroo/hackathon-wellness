@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import {Link} from 'react-router-dom';
 import React from "react";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
@@ -20,9 +20,11 @@ const PillarSelection = () => {
           <div className="pill">Nutrition</div>
         </div>
         <div className="fitness-p">
+        <Link to="/dashboard/fitness">
           <div className="pill-img">
             <img src={exercise} />
           </div>
+          </Link>
           <div className="pill">Fitness</div>
         </div>
         <div className="rest-p">
@@ -32,9 +34,11 @@ const PillarSelection = () => {
           <div className="pill">Rest</div>
         </div>
         <div className="mind-p">
+        <Link to="/dashboard/mind">
           <div className="pill-img">
             <img src={mental} />
           </div>
+        </Link>
           <div className="pill">Mind</div>
         </div>
       </div>

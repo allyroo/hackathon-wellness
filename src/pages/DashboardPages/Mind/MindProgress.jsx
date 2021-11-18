@@ -1,3 +1,5 @@
+
+
 import { useState } from 'react';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
@@ -5,7 +7,7 @@ import 'react-calendar/dist/Calendar.css';
 import NavBar from "../../../components/NavBar";
 
 import { Nav } from 'react-bootstrap';
-import { Button, Card, CardImg, CardBody, CardTitle, CardText } from 'reactstrap';
+import { Form, FormGroup, Input, Label, Button } from 'reactstrap';
 import { IoIosSunny } from 'react-icons/io';
 // import { AiOutlineHeart } from "react-icons/ai";
 
@@ -17,7 +19,7 @@ import MindSmartGoal from '../../../components/MindComponents/MindSmartGoal';
 
 const MindProgress = () => {
     const [value, onChange] = useState(new Date());
-    const [count, setCount] = useState(0);
+    const [count, setCount] = useState(5);
 
     return (
         <div className="mind-progress-class">
@@ -37,17 +39,18 @@ const MindProgress = () => {
                         <div className="progress-details">
                             <MindSmartGoal />
                             <div className="progress-graphs">
-                                <div className="flower-graphics">
-                                    <Button onClick={() => setCount(count + 1)} color="secondary" outline>Goal Completed</Button>
-                                    <div className="flower-boxes">
+                                <div className="progress-button-class">
+                                    <h5>have you completed today's goal?</h5>
+                                    <Button outline onClick={() => setCount(count + 1)} color="success" >Yes</Button>
+                                    <Button outline onClick={() => setCount(count - 1)} color="danger" style={{ "marginLeft": "15px" }}>No</Button>
+                                </div>
+                                <div className="flower-progress-container">
+                                    <div className="flower-graphics" style={{ "height": `${count * 10}%`, "backgroundColor":"#8bd3dd" }}></div>
+                                        <img src={FlowerIcon} alt="flower icon SVG" className="flower-graphics overlay" />
 
-                                        <img src={FlowerIcon} alt="flower icon SVG" />
-                                    </div>
                                 </div>
-                                <div className="graph-data">
-                                    progress
-                                        <div className="box" style={{ "height": `${count*10}%` }}>{count*10}%</div>
-                                </div>
+
+
                             </div>
                         </div>
                     </div>

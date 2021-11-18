@@ -6,3 +6,11 @@
 .current-goal {
     border: none;
 }
+.smart-goal-title {
+    text-align: center;
+    margin-top: 2vh;
+}
+.smart-goal-text {
+    font-size: 1.3vw;
+    text-align: center;
+}

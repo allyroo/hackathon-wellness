@@ -12,6 +12,8 @@ import { BsBoxArrowInUpRight } from "react-icons/bs";
 import './FitnessProgress.css';
 import FlowerIcon from '../../../components/images/flower-icon.svg'
 import Footer from '../../../components/Footer';
+import MindSmartGoal from '../../../components/MindComponents/MindSmartGoal';
+import DashboardNav from '../../../components/DashboardElements/DashboardNav';
 
 const FitnessProgress = () => {
     const [value, onChange] = useState(new Date());
@@ -23,59 +25,26 @@ const FitnessProgress = () => {
             <div className="dashboard-main">
                 {/* Left Menu Bar */}
                 <div className="dashboard-nav">
-                    <h3>Fitness</h3>
-                    <h6><a href="/dashboard/fitness">Back to Dashboard <BsBoxArrowInUpRight className="article-link-icon" /></a></h6>
-                    <Nav defaultActiveKey="/" className="dashboard-links flex-column">
-                        <Button className="dashboard-button" outline style={{ "backgroundColor": "#001858" }}>
-                            <Nav.Link href="/dashboard/fitness/progress" className="link" style={{ "color": "#fef6e4" }}>Progress</Nav.Link>
-                        </Button>
-                        <Button className="dashboard-button" outline>
-                            <Nav.Link href="/dashboard/fitness/community" className="link">Community</Nav.Link>
-                        </Button>
-                        <Button className="dashboard-button" outline>
-                            <Nav.Link href="/dashboard/fitness/resources" className="link">Resources</Nav.Link>
-                        </Button>
-                        <Button className="dashboard-button" outline>
-                            <Nav.Link href="/dashboard/fitness/support" className="link">Support</Nav.Link>
-                        </Button>
-                    </Nav>
+                    <DashboardNav />
                 </div>
 
                 {/* Main Content */}
-                <div className="dashboard-content-progress">
-                    <h2>FITNESS 💚"</h2>
-                    <div className="progress-main">
+                <div className="fitness-dashboard-content-progress">
+                <MindSmartGoal />
+                    <div className="fitness-progress-main">
                         <Calendar
                             onchange={onChange}
                             value={value}
-                            className="progress-calendar"
+                            className="fitness-progress-calendar"
                         />
                         <div className="progress-details">
-                            <div className="current-goal">
-                                <Card className="card">
-                                    <CardBody>
-                                        <CardTitle tag="h5">
-                                            <IoIosSunny /> Mind: Current Smart Goal
-                                        </CardTitle>
-                                        <CardText>
-                                            This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                                        </CardText>
-                                    </CardBody>
-                                </Card>
-                            </div>
-                            <div className="progress-graphs">
-                                <div className="flower-graphics">
-                                    <Button onClick={() => setCount(count + 1)} color="secondary" outline>Goal Completed</Button>
-                                    <div className="flower-boxes">
+                            <h3>This week's progress:</h3>
+                            <ul>
+                                <li><h4>fitness goal 1</h4></li>
+                                <li><h4>fitness goal 2</h4></li>
+                                <li><h4>fitness goal 3</h4></li>
 
-                                        <img src={FlowerIcon} alt="flower icon SVG" />
-                                    </div>
-                                </div>
-                                <div className="graph-data">
-                                    progress
-                                        <div className="box" style={{ "height": `${count*10}%` }}>{count*10}%</div>
-                                </div>
-                            </div>
+                            </ul>
                         </div>
                     </div>
                 </div>

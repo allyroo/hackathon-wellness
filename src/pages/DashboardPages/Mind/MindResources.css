@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins&family=Roboto+Slab&display=swap');
 
 .dashboard-content-resources {
-    padding: 6vh 5vw;
+    padding: 3vh 5vw;
     font-family: 'Poppins', sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-top: -3vh;
 }
 
 
@@ -24,13 +25,8 @@
     margin-left: 7px;
 }
 
-
-
-
-
-
 .article-class {
-    margin-top: 8vh;
+    margin-top: 5vh;
     font-family: 'Poppins', sans-serif;
 }
 .article-class h3 {

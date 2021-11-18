@@ -40,7 +40,9 @@ const NavBar = () => {
                     className=""
                     navbar
                 >
-                    <NavItem className="nav-items">
+                    {pathname.includes("dashboard") 
+                    ? null
+                    :<NavItem className="nav-items">
                         <NavLink href="/">
                             Home
                         </NavLink>
@@ -48,10 +50,11 @@ const NavBar = () => {
                             About
                         </NavLink>
                     </NavItem>
+                    }
                 </Nav>
 
                 {pathname.includes("dashboard")
-                    ? <div style={{ "display": "flex", "alignItems": "center", "marginLeft": "20px" }}>
+                    ? <div style={{ "display": "flex", "alignItems": "center", "marginRight": "3vw" }}>
                         <Avatar />
                         <h5>Hi Sophie!</h5>
                         {/* Dropdown */}
