@@ -28,18 +28,18 @@ h3 {
 }
 
 .button-class:hover {
-    background-color: #8bd3dd;
+    background-color: #f3d2c1;
     color: #001858;
 }
 
 .outline-btn {
-    background: #fef6e4;
-    border: 2px solid #f582ae;
+    background: #8bd3dd;
+    border: none;
 }
 
 .outline-btn:hover {
-    background: #f582ae;
-    border: 2px solid transparent;
+    background: #f3d2c1;
+    border: none;
 }
 
 

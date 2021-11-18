@@ -19,14 +19,15 @@
 }
 
     .login-button Button {
-        background-color: transparent;
-        border: 2px solid #f582ae;
+        background-color: #8bd3dd;
+        border: none;
         color: #001858;
         padding: 1vh 5vw;
     }
     .login-button Button:hover {
-        background-color: #f582ae;
-        border: 2px solid #f582ae;
+        background-color: #f3d2c1;
+        color: #001858;
+        border: none;
     }
 
 .checkbox-label {

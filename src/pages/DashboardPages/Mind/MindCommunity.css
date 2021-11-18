@@ -118,11 +118,11 @@
 }
 
 .post {
-    background: #f5f5f5;
+    background: rgba(139,211,221, 0.1);
 }
 
 .tags {
-    background-color: #fef6e4;
+    background-color: #f3d2c1;
     color: #001858;
     border: none;
     margin-right: 1rem;
