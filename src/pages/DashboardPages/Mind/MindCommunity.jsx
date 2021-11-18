@@ -8,7 +8,7 @@ import {
     CardBody, 
     CardTitle, 
     CardSubtitle, 
-    CardText, 
+    CardText
  } from 'reactstrap';
  import { MdSearch, MdOutlineAdd } from 'react-icons/md';
 
@@ -49,16 +49,16 @@ const MindCommunity = () => {
                         </Button>
                     </div>
                     <div className="all-posts">
-                        <Card className="goals">
+                        <Card className="post">
                             <CardBody>
                                 <CardTitle tag="h5">
-                                    Card title
+                                    Discussion Title
                                 </CardTitle>
                                 <CardSubtitle
                                     className="mb-2 text-muted"
                                     tag="h6"
                                 >
-                                    Card subtitle
+                                    11-17-2021
                                 </CardSubtitle>
                                 <CardText>
                                     Some quick example text to build on the card title and make up the bulk of the card's content.
@@ -71,16 +71,16 @@ const MindCommunity = () => {
                                 </Button>
                             </CardBody>
                         </Card>
-                        <Card className="wins">
+                        <Card className="post">
                             <CardBody>
                                 <CardTitle tag="h5">
-                                    Card title
+                                    Discussion Title 
                                 </CardTitle>
                                 <CardSubtitle
                                     className="mb-2 text-muted"
                                     tag="h6"
                                 >
-                                    Card subtitle
+                                    11-11-2021
                                 </CardSubtitle>
                                 <CardText>
                                     Some quick example text to build on the card title and make up the bulk of the card's content.
@@ -90,16 +90,16 @@ const MindCommunity = () => {
                                 </Button>
                             </CardBody>
                         </Card>
-                        <Card className="struggles">
+                        <Card className="post">
                             <CardBody>
                                 <CardTitle tag="h5">
-                                    Card title
+                                    Discussion Title
                                 </CardTitle>
                                 <CardSubtitle
                                     className="mb-2 text-muted"
                                     tag="h6"
                                 >
-                                    Card subtitle
+                                    11-15-2021
                                 </CardSubtitle>
                                 <CardText>
                                     Some quick example text to build on the card title and make up the bulk of the card's content.
@@ -109,16 +109,16 @@ const MindCommunity = () => {
                                 </Button>
                             </CardBody>
                         </Card>
-                        <Card className="support">
+                        <Card className="post">
                             <CardBody>
                                 <CardTitle tag="h5">
-                                    Card title
+                                    Discussion Title
                                 </CardTitle>
                                 <CardSubtitle
                                     className="mb-2 text-muted"
                                     tag="h6"
                                 >
-                                    Card subtitle
+                                    10-30-2021
                                 </CardSubtitle>
                                 <CardText>
                                     Some quick example text to build on the card title and make up the bulk of the card's content.
