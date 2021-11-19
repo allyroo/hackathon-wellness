@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <Navbar fixed="bottom" className="footer">
             <NavbarBrand href="/">
-                <h3>SUPERBLOOM</h3>
+                <h3>Mohala</h3>
             </NavbarBrand>
             <div>
                 <Link to="/">

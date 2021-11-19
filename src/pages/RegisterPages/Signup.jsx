@@ -12,26 +12,26 @@ import Footer from "../../components/Footer";
 const Signup = (props) => {
 
     return (
-        <React.Fragment>
-            
-        {/* NAVBAR on top */}
-        <NavBar />
+        // <React.Fragment>
+        <div className="signup-page-layout">
 
-        <div className="signup-page">
-            <div className="signup-page-left">
-                {/* <BsFlower1 className="flower-icon" /> */}
-                <img src ={SignupImage} alt="Signup SVG"/>
+            {/* NAVBAR on top */}
+            <NavBar />
+            <div className="signup-page">
+                <div className="signup-page-left">
+                    {/* <BsFlower1 className="flower-icon" /> */}
+                    <img src={SignupImage} alt="Signup SVG" />
+                </div>
+                {/* <div className="divider"></div> */}
+                <div className="signup-page-right">
+                    <h2>Let's Get Started</h2>
+                    <SignupForm />
+                </div>
             </div>
-            {/* <div className="divider"></div> */}
-            <div className="signup-page-right">
-                <h2>Let's Get Started</h2>
-                <SignupForm/>
+            {/* FOOTER on bottom */}
+            <Footer />
             </div>
-        </div>
-
-        {/* FOOTER on bottom */}
-        <Footer />
-        </React.Fragment>
+        // </React.Fragment>
 
     )
 }

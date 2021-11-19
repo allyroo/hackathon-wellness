@@ -11,6 +11,8 @@ import {
 import { Link } from "react-router-dom";
 import { CgMenuRightAlt } from 'react-icons/cg';
 import { Dropdown } from 'react-bootstrap';
+import { IoMdFlower } from "react-icons/io";
+import { IoFlowerOutline } from "react-icons/io5";
 
 import './NavBar.css';
 import Avatar from './UserAvatar';
@@ -32,7 +34,7 @@ const NavBar = () => {
             sticky="top"
         >
             <NavbarBrand href="/">
-                <h3>SUPERBLOOM</h3>
+                <h3><IoFlowerOutline /> Mohala </h3>
             </NavbarBrand>
             <CgMenuRightAlt onClick={toggle} className="nav-menu" />
             <Collapse isOpen={isOpen} navbar className="dropdown">

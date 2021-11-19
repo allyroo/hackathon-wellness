@@ -17,13 +17,14 @@ const SignupForm = (props) => {
   const onSubmitHandler = (e) => {
     e.preventDefault();
     // create user
-    
+
     // navigate to login page
     navigate('/login');
   }
 
   return (
     <Form className="form-class" onSubmit={onSubmitHandler}>
+      {/* <div className="form-name-class"> */}
       <FormGroup>
         <Label htmlFor="firstName">
           First Name
@@ -50,11 +51,13 @@ const SignupForm = (props) => {
           onChange={(e) => setLastName(e.target.value)}
         />
       </FormGroup>
+      {/* </div> */}
       <FormGroup>
         <Label htmlFor="email">
           Email
         </Label>
         <Input
+          className="input-field"
           id="email"
           name="email"
           placeholder="Email"
@@ -68,6 +71,7 @@ const SignupForm = (props) => {
           Password
         </Label>
         <Input
+          className="input-field"
           id="password"
           name="password"
           placeholder="Password"
@@ -81,6 +85,7 @@ const SignupForm = (props) => {
           Verify Password
         </Label>
         <Input
+          className="input-field"
           id="password"
           name="password"
           placeholder="Verify Password"

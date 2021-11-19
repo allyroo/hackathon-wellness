@@ -29,7 +29,7 @@
 .dashboard-content-progress h2 {
     font-size: 25px;
     font-style: italic;
-    margin-top: 5vh;
+    margin-top: 3vh;
 }
 
 /* Overriding React-Calendar styling */
@@ -83,18 +83,16 @@
 .progress-graphs {
     margin-top: 5vh;
     display: flex;
-    /* align-items: center; */
-    /* justify-content: space-around; */
 }
 
 .progress-button-class {
     width: 20vw;
-    /* height: 200px; */
+    /* min-height: 20vh;
+    max-height: 30vh; */
+    height: 30vh;
     /* border: 2px solid #8bd3dd; */
     background-color: rgb(243,210,193, 0.4);
     border-radius: 10px;
-    margin-left: -5vw;
-    margin-right: 2vw;
     padding: 5vh 2vw;
 }
 .progress-button-class h5{
@@ -117,8 +115,8 @@
     height: 17vh;
     /* height: 150px; */
     position: relative;
+    margin-right: 70px;
 }
-
 
 .flower-graphics {
     width: 100%;

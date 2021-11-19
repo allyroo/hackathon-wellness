@@ -1,10 +1,8 @@
 .form-class {
     width: 35vw;
-    /* margin: 10vw auto; */
 }
-
 .form-label {
-    margin-bottom: 3px;
+    margin-bottom: 2px;
 }
 
 .signup-button {

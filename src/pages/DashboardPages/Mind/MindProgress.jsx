@@ -39,17 +39,16 @@ const MindProgress = () => {
                         <div className="progress-details">
                             <MindSmartGoal />
                             <div className="progress-graphs">
-                                <div className="progress-button-class">
-                                    <h5>have you completed today's goal?</h5>
-                                    <Button outline onClick={() => setCount(count + 1)} color="success" >Yes</Button>
-                                    <Button outline onClick={() => setCount(count - 1)} color="danger" style={{ "marginLeft": "15px" }}>No</Button>
-                                </div>
                                 <div className="flower-progress-container">
                                     <div className="flower-graphics" style={{ "height": `${count * 10}%`, "backgroundColor":"#8bd3dd" }}></div>
                                         <img src={FlowerIcon} alt="flower icon SVG" className="flower-graphics overlay" />
 
                                 </div>
-
+                                <div className="progress-button-class">
+                                    <h5>have you completed today's goal?</h5>
+                                    <Button outline onClick={() => setCount(count + 1)} color="success" >Yes</Button>
+                                    <Button outline onClick={() => setCount(count - 1)} color="danger" style={{ "marginLeft": "15px" }}>No</Button>
+                                </div>
 
                             </div>
                         </div>

@@ -121,4 +121,10 @@
     border-radius: 10px;
     padding: 5px 20px;
     height: 20vh;
+    color: #001858;
+    overflow: scroll;
+}
+.mind-dashboard-bottom-right h3 {
+    margin-top: 8px;
+    margin-bottom: 10px;
 }

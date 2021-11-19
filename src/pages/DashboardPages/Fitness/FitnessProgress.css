@@ -5,16 +5,9 @@
     color: #001858;
 }
 
-/* .dashboard-nav h3 {
-    padding: 15px;
-    font-size: 35px;
+.fitness-progress-class .dashboard-nav {
+    /* padding: 0; */
 }
-.dashboard-nav h6 a {
-    color: #001858;
-}
-.dashboard-nav h6 {
-    margin-bottom: -10vh;
-} */
 
 .fitness-dashboard-content-progress {
     /* background-color: #8bd3dd; */

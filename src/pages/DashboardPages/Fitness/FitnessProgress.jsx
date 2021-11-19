@@ -5,7 +5,7 @@ import 'react-calendar/dist/Calendar.css';
 import NavBar from "../../../components/NavBar";
 
 import { Nav } from 'react-bootstrap';
-import { Button, Card, CardImg, CardBody, CardTitle, CardText } from 'reactstrap';
+import { Progress } from 'reactstrap';
 import { IoIosSunny } from 'react-icons/io';
 import { BsBoxArrowInUpRight } from "react-icons/bs";
 
@@ -20,17 +20,15 @@ const FitnessProgress = () => {
     const [count, setCount] = useState(0);
 
     return (
-        <div className="mind-progress-class">
+        <div className="fitness-progress-class">
             <NavBar />
             <div className="dashboard-main">
                 {/* Left Menu Bar */}
-                <div className="dashboard-nav">
-                    <DashboardNav />
-                </div>
+                <DashboardNav />
 
                 {/* Main Content */}
                 <div className="fitness-dashboard-content-progress">
-                <MindSmartGoal />
+                    <MindSmartGoal />
                     <div className="fitness-progress-main">
                         <Calendar
                             onchange={onChange}
@@ -39,12 +37,25 @@ const FitnessProgress = () => {
                         />
                         <div className="progress-details">
                             <h3>This week's progress:</h3>
-                            <ul>
-                                <li><h4>fitness goal 1</h4></li>
-                                <li><h4>fitness goal 2</h4></li>
-                                <li><h4>fitness goal 3</h4></li>
-
-                            </ul>
+                            <div className="fitness-progressbar-class">
+                                <Progress value={10} />
+                                <Progress
+                                    color="success"
+                                    value="25"
+                                />
+                                <Progress
+                                    color="info"
+                                    value={50}
+                                />
+                                <Progress
+                                    color="warning"
+                                    value={75}
+                                />
+                                <Progress
+                                    color="danger"
+                                    value="100"
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>

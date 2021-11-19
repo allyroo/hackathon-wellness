@@ -58,6 +58,7 @@ const MindDashboard = (props) => {
                             </div>
                         <div className="mind-dashboard-bottom-right">
                             <h3>Reflection</h3>
+                            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio, exercitationem veniam eaque eum expedita odit temporibus fuga dolores amet possimus, sed commodi! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam aut vel possimus nesciunt fugiat vitae illo officiis nobis sint rem dolorum, ex laboriosam autem molestiae. Veniam vero error quibusdam rerum!</h6>
                         </div>
                     </div>
                 </div>
