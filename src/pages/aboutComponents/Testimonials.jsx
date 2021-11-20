@@ -13,7 +13,7 @@ const Testimonials = () => {
                 <Row xs="1" sm="1" md="1" lg="3" className="about-row">
                     <Col className="about-col">
                         <img src={woman2} alt=""  className="testimonials-img img-fluid mb-3"/>
-                        <q>My partner and I found our therapist through Superbloom. After 2 
+                        <q>My partner and I found our therapist through Mohala. After 2 
                         weeks, our relationship improved immensely and we just got started!</q>
                     </Col>
                     <Col className="about-col">
