@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins&family=Roboto+Slab&display=swap');
 
 .signup-page {
-    height: 95vh;
+    height: 100vh;
     margin: 5vh auto;
     display: flex;
     justify-content: space-between;
