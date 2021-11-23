@@ -1,5 +1,5 @@
 # Mohala
-    Your one-stop shop for better mental health!
+  Your one-stop shop for better mental health!
     
 ### Objectives
 
