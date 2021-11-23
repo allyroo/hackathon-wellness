@@ -13,9 +13,9 @@
 }
 
 .about-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 1rem;
 }
 
 .about-col {
@@ -23,6 +23,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.about-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img img {
+    width: 193px;
+    height: 162px;
 }
 
 .pillars-container h4 {
