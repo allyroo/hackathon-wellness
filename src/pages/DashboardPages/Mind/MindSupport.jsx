@@ -31,6 +31,8 @@ const MindSupport = () => {
       setIsOpen(!isOpen);
   };
 
+  
+
   return (
     <div>
       <NavBar />

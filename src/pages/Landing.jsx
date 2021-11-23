@@ -10,8 +10,9 @@ import tracker from "../components/images/tracker.svg";
 import support from "../components/images/support.svg";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
-import { BsFlower1 } from "react-icons/cg";
+import { IoIosArrowDown } from "react-icons/io";
 import { NavLink, Button } from "reactstrap";
+
 import "./Landing.css";
 
 const Landing = () => {
@@ -29,10 +30,15 @@ const Landing = () => {
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </div>
             <NavLink href="/about">
-              <Button className="button-class" outline>
-                Learn More
-              </Button>
+              <Button>Learn More</Button>
             </NavLink>
+            <div className="main" id="section1">
+              <a href="#section2">
+                World
+                <IoIosArrowDown />
+                Hello
+              </a>
+            </div>
           </div>
         </section>
         {/* breaker bloom text */}
@@ -60,6 +66,9 @@ const Landing = () => {
         <section className="bloom">
           <div className="title">
             Dig at the roots instead of hacking at the leaves.{" "}
+          </div>
+          <div className="main" id="section2">
+            <a href="#section1">Hello</a>
           </div>
         </section>
         <section className="how-to">
