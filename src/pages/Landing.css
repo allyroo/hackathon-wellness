@@ -12,14 +12,14 @@ html {
 }
 
 .hero .hero-overlay {
-  background-color: #83bdbb7c;
+  background-color: #bdbdbd7c;
   height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  text-align: right;
   color: #fff;
 }
 
@@ -38,6 +38,8 @@ html {
 .bloom {
   height: 100%;
   letter-spacing: 5px;
+  display: flex;
+  justify-content: space-evenly;
 }
 .product {
   display: flex;
@@ -57,7 +59,7 @@ html {
   width: 40%;
   text-align: center;
   min-height: 650px;
-  background-color: #f3d2c1;
+  background-color: #c9c0ac;
   align-items: center;
   flex: 50%;
   vertical-align: middle;
@@ -69,8 +71,16 @@ html {
   width: 60%;
   font-size: 2rem;
 }
+.dash-girl {
+  background-color: #c9c0ac;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 650px;
+  flex: 50%;
+}
 .product-img {
-  background-color: #f3d2c1;
+  background-color: #c9c0ac;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,6 +94,11 @@ html {
   }
 }
 
+.break {
+  height: 20px;
+  background-color: white;
+}
+
 .dash-container {
   display: flex;
   flex-wrap: wrap;
@@ -95,7 +110,6 @@ html {
 .dash-img {
   background-color: #ffffff;
   text-align: center;
-
   flex: 50%;
 }
 
@@ -103,7 +117,10 @@ html {
   margin: auto;
   border-radius: 5px;
 }
-
+.mobile-img {
+  width: 100%;
+  height: 100%;
+}
 .dash-txt {
   background-color: #ffffff;
   display: flex;
@@ -118,6 +135,10 @@ img {
   height: 100%;
 }
 
+.main {
+  font-size: 4em;
+}
+
 .dash {
   height: 700px;
   display: flex;
@@ -128,6 +149,9 @@ img {
   color: white;
 }
 
+.top-title {
+  height: 4em;
+}
 .title {
   font-family: "Poppins", sans-serif;
   font-size: 2em;
@@ -139,9 +163,13 @@ img {
 } */
 
 .how-to {
-  background-color: #d2e2e0;
+  background-color: #f3d2c1;
   height: 3000px;
   color: white;
+}
+
+p {
+  width: 60%;
 }
 
 .how-title {
