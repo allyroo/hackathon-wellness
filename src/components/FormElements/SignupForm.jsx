@@ -13,11 +13,17 @@ const SignupForm = (props) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
+  const [agree, setAgree] = useState(false);
+
+  const checkboxHandler = () => {
+    setAgree(!agree);
+  }
 
   const onSubmitHandler = (e) => {
     e.preventDefault();
     // create user
-
+    const newUser = {firstName, lastName, email, password, agree};
+    console.log("Welcome", newUser);
     // navigate to login page
     navigate('/login');
   }
@@ -95,14 +101,19 @@ const SignupForm = (props) => {
         />
       </FormGroup>
       <FormGroup check>
-        <Input type="checkbox" />
+        <Input 
+          type="checkbox" 
+          id="agree"
+          onChange={checkboxHandler}
+        />
         {' '}
         <Label className="checkbox-label" check>
-          I agree to Superbloom's Terms of Service and Privacy Policy.
+          I agree to Mohala’s Terms of Service and Privacy Policy.
         </Label>
       </FormGroup>
       <div className="signup-button">
         <Button type="submit">
+        {/* <Button disabled={!agree} type="submit"> */}
           Create Account
         </Button>
       </div>

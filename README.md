@@ -1,4 +1,45 @@
-# Getting Started with Create React App
+# Mohala
+    Your one-stop shop for better mental health!
+    
+### Objectives
+
+* Challenges: 
+
+    - Health & wellness are generic terms and cover a wide range of categories
+    - No single app addresses all of them at one place
+    - Difficult to find a customized wellness plan
+    - Speaking to someone can be intimidating.
+    - Not much education is around healthy substitutes and mindful eating.
+    - Local resources often get overlooked.
+
+* Solutions:
+
+    - Helps you address all the pillars of your health
+    - One stop shop
+    - Better control of your health
+    - Set up goals and track them
+    - Create new habits
+    - The power of community: Connect with a circle where you can have discussions, share experiences and feel belonged to a tribe. Connect you with local resources - Special events, gatherings, groups
+
+## Technology Used
+    - Wireframe: Balsamiq
+    - Front-end: ReactJS
+        * reactstrap
+        * react-bootstrap
+        * react-router-dom
+        * react-calendar
+        * react-icons
+    <!-- - Back-end: Express, Node.js, MongoDB -->
+
+## Installation
+
+### Video/Screenshots
+
+### Challenges and Future Implementations
+
+## Created By
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +108,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->

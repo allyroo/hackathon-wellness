@@ -14,7 +14,8 @@ const LoginForm = (props) => {
     const onSubmitHandler = (e) => {
         e.preventDefault();
         // login process
-
+        const currentUser = {email, password};
+        console.log("Welcome", currentUser);
         // navigate to dashboard page
         navigate('/selectpillar');
     }

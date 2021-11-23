@@ -50,7 +50,7 @@ const NavBar = () => {
         <Nav className="" navbar>
           {pathname.includes("dashboard") ? null : (
             <NavItem className="nav-items">
-              <NavLink href="/">Home</NavLink>
+              {/* <NavLink href="/">Home</NavLink> */}
               <NavLink href="/about">About</NavLink>
             </NavItem>
           )}
