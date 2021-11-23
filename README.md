@@ -1,4 +1,4 @@
-# Mohala
+# 🌻 Mohala
   Your one-stop shop for better mental health!
     
 ### Objectives
@@ -38,6 +38,8 @@
 ### Challenges and Future Implementations
 
 ## Created By
+
+### Credits
 
 <!-- # Getting Started with Create React App
 
