@@ -52,14 +52,14 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: #f582ae;
+  background: #F79ABD;
   color: #001858;
   border: none;
 }
 
 .add-btn:hover {
     background: transparent;
-    border: 1px solid #f582ae;
+    border: 1px solid #F79ABD;
     color: #001858;
 }
 
