@@ -1,9 +1,9 @@
 # 🌻 Mohala
   Your one-stop shop for better mental health!
     
-### Objectives
+### Purpose
 
-* Challenges: 
+### Challenges: 
 
     - Health & wellness are generic terms and cover a wide range of categories
     - No single app addresses all of them at one place
@@ -12,7 +12,7 @@
     - Not much education is around healthy substitutes and mindful eating.
     - Local resources often get overlooked.
 
-* Solutions:
+### Solutions:
 
     - Helps you address all the pillars of your health
     - One stop shop
