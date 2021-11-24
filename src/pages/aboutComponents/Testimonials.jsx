@@ -42,9 +42,10 @@ const Testimonials = () => {
                 </div>
             </Container>
             <Container className="bottom-container">
-                "Holistic living isn’t one size fits all. We are your resource to help you create a lifestyle 
+                Holistic living isn’t one size fits all. We are your resource to help you create a lifestyle 
                 that nourishes you as a whole and build a holistic lifestyle by approaching all the four pillars 
-                (Nutrition, Fitness, Rest, Mind) that are interconnected. "
+                (Nutrition, Fitness, Rest, Mind) that are interconnected. <br />
+                We help you discover ways and connect you with resources to make lasting lifestyle changes
                 <a href="signup">
                     <Button className="join-btn btn-block button-class">
                         Join Today
