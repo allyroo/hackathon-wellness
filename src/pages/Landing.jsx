@@ -26,13 +26,26 @@ const Landing = () => {
         {/* Hero */}
         <section className="hero">
           <div className="hero-overlay">
-            <div className="hero-title">THE EMPOWERED YOU</div>
-            <div className="hero-subtext">
+            <div className="hero-container">
+              <div className="hero-left"></div>
+              <div className="hero-right">
+                <div className="hero-title">
+                  Change your habits, change your life.
+                </div>
+                {/* <div className="hero-subtext">
               Create a personalized plan to track your pillars of wellness.
-            </div>
-            <NavLink href="/about">
+            </div> */}
+                {/* <NavLink href="/about">
               <Button>Learn More</Button>
-            </NavLink>
+            </NavLink> */}
+              </div>
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
             <div className="main" id="section1">
               <a href="#section2">
                 <IoIosArrowDown />
@@ -51,7 +64,7 @@ const Landing = () => {
         <section className="product">
           <div className="product-text">
             <div className="product-head">
-              Your one-stop shop for better mental health.
+              Your one-stop shop improved wellness.
             </div>
             <br />
             <p>
@@ -74,7 +87,7 @@ const Landing = () => {
           </div>
           <div className="product-text">
             <div className="product-head">
-              Connect your mind, body, and spirit.
+              Dig at the roots instead of hacking at the leaves.
             </div>
             <br />
             <p>
@@ -83,11 +96,7 @@ const Landing = () => {
             </p>
           </div>
         </section>
-        <section className="bloom">
-          <div className="title">
-            Dig at the roots instead of hacking at the leaves.{" "}
-          </div>
-        </section>
+
         <section className="how-to">
           {/* <div className="categories"> */}
 
@@ -128,7 +137,14 @@ const Landing = () => {
             <div className="how-title">Lean on the professionals</div>
             <img src={support} />
           </div>
+
+          <section className="bloom">
+            <div className="title">
+              Dig at the roots instead of hacking at the leaves.{" "}
+            </div>
+          </section>
         </section>
+
         <Footer />
       </div>
     </div>
