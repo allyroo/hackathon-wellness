@@ -42,10 +42,9 @@ const Testimonials = () => {
                 </div>
             </Container>
             <Container className="bottom-container">
-                "Donec a leo id est ornare porttitor ut a nibh. Nunc ut tincidunt tellus. 
-                Duis efficitur metus lectus, sed pretium nisi vestibulum ornare. Curabitur 
-                pretium ut diam vel porttitor. Nam sit amet dictum elit, sed pellentesque 
-                est. Quisque at commodo nisi. Praesent quis suscipit nunc."
+                "Holistic living isn’t one size fits all. We are your resource to help you create a lifestyle 
+                that nourishes you as a whole and build a holistic lifestyle by approaching all the four pillars 
+                (Nutrition, Fitness, Rest, Mind) that are interconnected. "
                 <a href="signup">
                     <Button className="join-btn btn-block button-class">
                         Join Today

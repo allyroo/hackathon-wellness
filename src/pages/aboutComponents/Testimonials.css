@@ -41,6 +41,12 @@
     padding: 2rem;
 }
 
+@media screen and (max-width: 768px) {
+    .bottom-container {
+        width: 80%;
+    }
+}
+
 .testimonials-img-container {
     display: flex;
     justify-content: center;
