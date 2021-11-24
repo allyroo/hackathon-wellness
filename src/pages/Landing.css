@@ -12,7 +12,7 @@ html {
 }
 
 .hero .hero-overlay {
-  background-color: #bdbdbd7c;
+  background-color: #00175838;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -33,7 +33,7 @@ html {
 }
 .hero-title {
   padding-top: 5em;
-  font-size: 4em;
+  font-size: 3.5em;
   line-height: 1.5em;
   /* padding-right: 3em; */
 }
@@ -173,9 +173,37 @@ img {
   align-items: center;
 } */
 
+.definition {
+  background: url("../components/images/branch.png") no-repeat right;
+  height: 40em;
+  background-color: #081e599d;
+}
+
+.mohala {
+  font-size: 15em;
+  text-align: left;
+  color: #f79abd;
+  padding-top: -5em;
+}
+
+.mohala-sub {
+  font-size: 3em;
+  padding-left: 3em;
+  font-style: italic;
+  text-align: left;
+  color: white;
+}
+.mohala-sub-def {
+  font-size: 2em;
+  padding-left: 4em;
+  width: 50%;
+  text-align: left;
+  color: white;
+}
+
 .how-to {
-  background-color: #f3d2c1;
-  height: 3000px;
+  background-color: #fff;
+  height: 60em;
   color: white;
 }
 
@@ -185,13 +213,21 @@ img {
 
 .how-title {
   padding-top: 100px;
-  padding-bottom: 25px;
-
+  padding-bottom: 1em;
+  font-family: "Poppins", sans-serif;
+  font-size: 3.5rem;
+  text-align: center;
+  color: #001858;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.how-subtitle {
+  padding-top: 100px;
+  padding-bottom: 2em;
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
   text-align: center;
   color: #001858;
-  font-weight: 600;
   letter-spacing: 2px;
 }
 
@@ -199,12 +235,20 @@ img {
   padding-bottom: 75px;
 }
 .pillar-img-container {
-  display: flex;
   flex-wrap: nowrap;
-  justify-content: center;
+  display: flex;
+  background-color: #f79abe8f;
+  padding: 1em;
 }
 .pillar-img {
   flex: 50%;
-  background-color: transparent;
+  height: 20em;
+  width: 20em;
+  background-color: #fff;
+  border-radius: 50%;
   padding-bottom: 30px;
+}
+
+hr.solid {
+  border-top: 1em dashed #081e59e2;
 }

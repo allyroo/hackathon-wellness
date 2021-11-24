@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import whoweare from "../components/images/whoweare.png";
 import dashboard from "../components/images/dashboard.jpg";
+import branch from "../components/images/branch.png";
 import mobile from "../components/images/mobile.jpg";
 import exercise from "../components/images/exercise.svg";
 import mental from "../components/images/mental.svg";
@@ -30,7 +31,8 @@ const Landing = () => {
               <div className="hero-left"></div>
               <div className="hero-right">
                 <div className="hero-title">
-                  Change your habits, change your life.
+                  Change your habits, <br />
+                  change your life.
                 </div>
                 {/* <div className="hero-subtext">
               Create a personalized plan to track your pillars of wellness.
@@ -80,6 +82,17 @@ const Landing = () => {
         <div className="break"></div>
 
         {/* Second feature */}
+        <section className="definition">
+          <div className="mohala">mo•hala</div>
+          <div className="mohala-sub">[mo-HAH-lah] Hawaiian</div>
+          <div className="mohala-sub-def">
+            The metaphorical unfolding of an idea or an initial plan which then
+            evolves into a fully realized vision.
+          </div>
+        </section>
+
+        <div className="break"></div>
+        {/* Third feature */}
 
         <section className="product">
           <div className="product-img">
@@ -101,49 +114,41 @@ const Landing = () => {
           {/* <div className="categories"> */}
 
           <div className="pillar">
-            <div className="how-title">Choose a pillar</div>
+            <div className="how-title">
+              Dashboards built with your vision in mind.
+            </div>
+            <hr class="solid" />
             <div className="pillar-img-container">
               <div className="box1">
                 <div className="pillar-img">
-                  <img src={food} />
+                  <img src={tracker} />
+                  <div className="how-subtitle">Track Progress</div>
                 </div>
               </div>
               <div className="box1">
                 <div className="pillar-img">
-                  <img src={exercise} />
+                  <img src={community} />
+                  <div className="how-subtitle">Connect with Community</div>
                 </div>
               </div>
               <div className="box1">
                 <div className="pillar-img">
-                  <img src={relax} />
-                </div>
-              </div>
-              <div className="box1">
-                <div className="pillar-img">
-                  <img src={mental} />
+                  <img src={support} />
+                  <div className="how-subtitle">Receive Guidance</div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="track">
-            <div className="how-title">Track your progress</div>
-            <img src={tracker} />
-          </div>
-          <div className="community">
-            <div className="how-title">Connect with the community</div>
-            <img src={community} />
-          </div>
-          <div className="provider">
-            <div className="how-title">Lean on the professionals</div>
-            <img src={support} />
+            <hr class="solid" />
           </div>
 
-          <section className="bloom">
+          {/* <section className="bloom">
             <div className="title">
               Dig at the roots instead of hacking at the leaves.{" "}
             </div>
-          </section>
+          </section> */}
         </section>
+        {/* End Section */}
+        <section></section>
 
         <Footer />
       </div>
