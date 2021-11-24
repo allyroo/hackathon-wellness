@@ -112,8 +112,7 @@ const SignupForm = (props) => {
         </Label>
       </FormGroup>
       <div className="signup-button">
-        <Button type="submit">
-        {/* <Button disabled={!agree} type="submit"> */}
+        <Button disabled={!agree} type="submit">
           Create Account
         </Button>
       </div>

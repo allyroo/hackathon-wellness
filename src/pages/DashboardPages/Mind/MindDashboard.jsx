@@ -47,7 +47,7 @@ const MindDashboard = (props) => {
                                 <h3>Local Resources</h3>
                         </NavLink>
                                 <div className="mind-dashboard-local-resources">
-                                    <div className="mind-resources-map">
+                                    <div className="mind-dashboard-map">
                                         <MindResourceMap />
                                     </div>
                                     <div className="mind-resources-directory" >

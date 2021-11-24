@@ -12,5 +12,7 @@
 }
 .smart-goal-text {
     font-size: 1.3vw;
-    text-align: center;
+    margin-top: 2vh;
+    width: 30vw;
+    margin: 0 auto;
 }
