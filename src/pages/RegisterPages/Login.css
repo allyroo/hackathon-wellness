@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins&family=Roboto+Slab&display=swap');
 
 .login-page {
-    /* min-height: 80vh; */
     margin: 5vh auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-content: center;
     font-family: 'Poppins', sans-serif;
     margin-top: 10vh;
@@ -24,15 +23,6 @@
         color: #f3d2c1;
     }
 
-    /* .divider {
-        height: 80vh;
-        width: 3px;
-        margin: 2vh 3vw;
-        background-color: rgba(109, 107, 107, 0.4);
-        border-radius: 20px;
-    } */
-
-
     .login-page-left h2 {
         color: rgb(109, 107, 107);
         margin-bottom: 5vh;
@@ -40,7 +30,5 @@
     }
 
     .login-page-right img {
-        width: 800px;
-        height: 450px;
-        margin-left: -200px;
+        width: 32vw;
     }
