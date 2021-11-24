@@ -22,7 +22,11 @@ h3 {
 }
 
 .button-class {
+<<<<<<< HEAD
     background-color: #F582AE;
+=======
+    background-color: #F79ABD;
+>>>>>>> 788c6ab6359c90f6146eefa2f6d93011f12a5414
     border: none;
     color: #001858;
 }

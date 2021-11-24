@@ -9,7 +9,7 @@ const Mission = () => {
             <div className="info-heading">
                 <h1 className="heading">Our Mission</h1>
             </div>
-                <Row xs="1" md="2" className="info-row">
+                <Row xs="1" sm="2" md="2" className="info-row">
                     <Col  className="left-col">
                         <h5 className="about-subheading text-start">More Balance. More Calm. Less Stress.</h5>
                         <p className="about-desc">
