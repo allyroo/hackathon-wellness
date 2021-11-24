@@ -22,12 +22,18 @@ const MindProgress = () => {
     const [count, setCount] = useState(1);
 
     const taskComplete = () => {
-        if (count > 0 && count < 9) {
+        if (count < 9) {
             setCount(count + 1)
-        } 
+            console.log(count)
+        } else if (count > 8) {
+            setCount(8);
+            console.log(count)
+            console.log('limit exceeded')
+            // but count keeps going up
+        }
     }
     const taskIncomplete = () => {
-        if (count > 0 && count < 9) {
+        if (count > 0) {
             setCount(count - 1)
         }
     }
@@ -65,7 +71,14 @@ const MindProgress = () => {
                         <div className="flower-growth-box">
                             {/* https://stackoverflow.com/questions/62192049/how-do-i-dynamically-import-images-in-react */}
                             {/* update the alt text to describe the growth progression */}
-                            <img src={require(`./images/flower-${count}.jpg`).default} alt='flower growth progression' />
+                            <img 
+                                src={
+                                    count < 1 
+                                    ? require(`./images/flower-1.jpg`).default 
+                                    : count > 8 
+                                    ? require(`./images/flower-8.jpg`).default 
+                                    : require(`./images/flower-${count}.jpg`).default} 
+                                alt='flower growth progression' />
                         </div>
 
 
