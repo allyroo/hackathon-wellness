@@ -12,7 +12,7 @@ html {
 }
 
 .hero .hero-overlay {
-  background-color: #8bd4dd81;
+  background-color: #00175838;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -33,7 +33,7 @@ html {
 }
 .hero-title {
   padding-top: 5em;
-  font-size: 4em;
+  font-size: 3.5em;
   line-height: 1.5em;
   /* padding-right: 3em; */
 }
@@ -176,13 +176,13 @@ img {
 .definition {
   background: url("../components/images/branch.png") no-repeat right;
   height: 40em;
-  background-color: #8bd4dda1;
+  background-color: #081e599d;
 }
 
 .mohala {
   font-size: 15em;
   text-align: left;
-  color: rgb(247, 243, 243);
+  color: #f79abd;
   padding-top: -5em;
 }
 
@@ -191,12 +191,14 @@ img {
   padding-left: 3em;
   font-style: italic;
   text-align: left;
+  color: white;
 }
 .mohala-sub-def {
   font-size: 2em;
   padding-left: 4em;
   width: 50%;
   text-align: left;
+  color: white;
 }
 
 .how-to {
@@ -235,7 +237,7 @@ img {
 .pillar-img-container {
   flex-wrap: nowrap;
   display: flex;
-  background-color: #8bd4dda1;
+  background-color: #f79abe8f;
   padding: 1em;
 }
 .pillar-img {
@@ -248,5 +250,5 @@ img {
 }
 
 hr.solid {
-  border-top: 1em dashed #8bd3dd;
+  border-top: 1em dashed #081e59e2;
 }

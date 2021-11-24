@@ -31,7 +31,8 @@ const Landing = () => {
               <div className="hero-left"></div>
               <div className="hero-right">
                 <div className="hero-title">
-                  Change your habits, change your life.
+                  Change your habits, <br />
+                  change your life.
                 </div>
                 {/* <div className="hero-subtext">
               Create a personalized plan to track your pillars of wellness.
@@ -146,6 +147,8 @@ const Landing = () => {
             </div>
           </section> */}
         </section>
+        {/* End Section */}
+        <section></section>
 
         <Footer />
       </div>
