@@ -38,8 +38,8 @@ const Landing = () => {
               Create a personalized plan to track your pillars of wellness.
             </div> */}
                 {/* <NavLink href="/about">
-              <Button>Learn More</Button>
-            </NavLink> */}
+                  <Button>Learn More</Button>
+                </NavLink> */}
               </div>
             </div>
             <br />
@@ -86,8 +86,7 @@ const Landing = () => {
           <div className="mohala">mo•hala</div>
           <div className="mohala-sub">[mo-HAH-lah] Hawaiian</div>
           <div className="mohala-sub-def">
-            The metaphorical unfolding of an idea or an initial plan which then
-            evolves into a fully realized vision.
+            to unfold or blossom, like the petals of a flower would
           </div>
         </section>
 
@@ -119,23 +118,19 @@ const Landing = () => {
             </div>
             <hr class="solid" />
             <div className="pillar-img-container">
-              <div className="box1">
-                <div className="pillar-img">
-                  <img src={tracker} />
-                  <div className="how-subtitle">Track Progress</div>
-                </div>
+              <div className="tracker-img">
+                <img src={tracker} />
+                <div className="how-subtitle">Track Progress</div>
               </div>
-              <div className="box1">
-                <div className="pillar-img">
-                  <img src={community} />
-                  <div className="how-subtitle">Connect with Community</div>
-                </div>
+
+              <div className="community-img">
+                <img src={community} />
+                <div className="how-subtitle">Connect with Community</div>
               </div>
-              <div className="box1">
-                <div className="pillar-img">
-                  <img src={support} />
-                  <div className="how-subtitle">Receive Guidance</div>
-                </div>
+
+              <div className="support-img">
+                <img src={support} />
+                <div className="how-subtitle">Receive Guidance</div>
               </div>
             </div>
             <hr class="solid" />
@@ -148,7 +143,21 @@ const Landing = () => {
           </section> */}
         </section>
         {/* End Section */}
-        <section></section>
+        <section className="tail">
+          <div className="tail-title">
+            "The flower of health blooms when all parts work together."
+            <NavLink href="/signup">
+              <Button className="button-class" outline>
+                BLOOM TODAY
+              </Button>
+            </NavLink>
+          </div>
+
+          {/* <div className="tail-subtext">
+            We help you create a holistic lifestyle by approaching all the four
+            pillars (Mind, Nutrition, Physical, Rest) that are interconnected.{" "}
+          </div> */}
+        </section>
 
         <Footer />
       </div>
