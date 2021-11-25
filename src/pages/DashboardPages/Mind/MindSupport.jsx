@@ -36,7 +36,7 @@ const MindSupport = () => {
   return (
     <div>
       <NavBar />
-      <div className="dashboard-main">
+      <div className="dashboard-main support">
         <DashboardNav />
 
         {/* Main Content */}

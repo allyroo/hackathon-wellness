@@ -1,3 +1,7 @@
+.support .dashboard-nav {
+  min-height: 100vh;
+}
+
 .dashboard-content-support {
   display: flex;
   flex-direction: row;
