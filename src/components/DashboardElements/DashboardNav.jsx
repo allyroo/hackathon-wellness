@@ -30,7 +30,7 @@ const DashboardNav = (props) => {
     }
 
     const fitnessStyles = {
-        backgroundColor: "#8bd3dd"
+        backgroundColor: "#c9c0ac"
     }
 
     return (
