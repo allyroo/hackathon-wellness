@@ -14,29 +14,26 @@
 
 .about-row {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 2fr));
     grid-gap: 1rem;
 }
 
 .about-col {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 1rem;  
 }
 
 .about-img {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2rem;
+    height: 125px;
 }
 
-.about-img img {
-    width: 193px;
-    height: 162px;
+.about-text h4 {
+    text-align: center;
 }
 
 .pillars-container h4 {
     color: #172c66;
 }
-

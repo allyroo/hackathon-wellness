@@ -19,7 +19,7 @@ const MindCommunity = () => {
     return (
         <div>
             <NavBar />
-            <div className="dashboard-main">
+            <div className="dashboard-main community">
                 <DashboardNav />
 
                 {/* Main Content */}
@@ -52,7 +52,7 @@ const MindCommunity = () => {
                         <Card className="post">
                             <CardBody>
                                 <CardTitle tag="h5">
-                                    Discussion Title
+                                    My Future Goals
                                 </CardTitle>
                                 <CardSubtitle
                                     className="mb-2 text-muted"
@@ -61,7 +61,7 @@ const MindCommunity = () => {
                                     11-17-2021
                                 </CardSubtitle>
                                 <CardText>
-                                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                                    Hi everyone! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean viverra odio eu consectetur bibendum...
                                 </CardText>
                                 <Button className="tags">
                                     goals
@@ -74,7 +74,7 @@ const MindCommunity = () => {
                         <Card className="post">
                             <CardBody>
                                 <CardTitle tag="h5">
-                                    Discussion Title 
+                                    Productive Day 
                                 </CardTitle>
                                 <CardSubtitle
                                     className="mb-2 text-muted"
@@ -93,7 +93,7 @@ const MindCommunity = () => {
                         <Card className="post">
                             <CardBody>
                                 <CardTitle tag="h5">
-                                    Discussion Title
+                                    Losing Motivation
                                 </CardTitle>
                                 <CardSubtitle
                                     className="mb-2 text-muted"
@@ -112,7 +112,7 @@ const MindCommunity = () => {
                         <Card className="post">
                             <CardBody>
                                 <CardTitle tag="h5">
-                                    Discussion Title
+                                    Day by Day
                                 </CardTitle>
                                 <CardSubtitle
                                     className="mb-2 text-muted"

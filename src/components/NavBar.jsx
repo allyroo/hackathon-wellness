@@ -65,7 +65,7 @@ const NavBar = () => {
             }}
           >
             <Avatar />
-            <h5>Good {timeOfDay}, Sophie!</h5>
+            <h5>Good {timeOfDay}, Zahra!</h5>
             {/* Dropdown */}
           </div>
         ) : (

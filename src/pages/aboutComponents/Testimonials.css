@@ -41,6 +41,16 @@
     padding: 2rem;
 }
 
+.bottom-container p {
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .bottom-container {
+        width: 100%;
+    }
+}
+
 .testimonials-img-container {
     display: flex;
     justify-content: center;
@@ -54,9 +64,8 @@
     flex-basis: 48%;
 }
 
-.testimonials-img img {
-    width: 50%;
-    height: 50%;
+.testimonials-name {
+    font-size: 1.5rem;
 }
 
 .testimonials-img {
