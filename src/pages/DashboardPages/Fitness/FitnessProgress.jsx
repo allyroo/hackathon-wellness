@@ -1,23 +1,20 @@
 import { useState } from 'react';
 import Calendar from 'react-calendar';
+import { BsCheck2 } from "react-icons/bs";
+import { Progress } from 'reactstrap';
 import 'react-calendar/dist/Calendar.css';
 
-import NavBar from "../../../components/NavBar";
-
-import { Nav } from 'react-bootstrap';
-import { Progress } from 'reactstrap';
-import { IoIosSunny } from 'react-icons/io';
-import { BsBoxArrowInUpRight } from "react-icons/bs";
-
 import './FitnessProgress.css';
-import FlowerIcon from '../../../components/images/flower-icon.svg'
+import NavBar from "../../../components/NavBar";
 import Footer from '../../../components/Footer';
 import MindSmartGoal from '../../../components/MindComponents/MindSmartGoal';
 import DashboardNav from '../../../components/DashboardElements/DashboardNav';
 
 const FitnessProgress = () => {
     const [value, onChange] = useState(new Date());
-    const [count, setCount] = useState(0);
+    const [countOne, setCountOne] = useState(20);
+    const [countTwo, setCountTwo] = useState(40);
+    const [countThree, setCountThree] = useState(60);
 
     return (
         <div className="fitness-progress-class">
@@ -35,26 +32,36 @@ const FitnessProgress = () => {
                             value={value}
                             className="fitness-progress-calendar"
                         />
-                        <div className="progress-details">
-                            <h3>This week's progress:</h3>
+                        <div className="fitness-progress-details">
+                            <h3>this week's progress:</h3>
                             <div className="fitness-progressbar-class">
-                                <Progress value={10} />
-                                <Progress
-                                    color="success"
-                                    value="25"
-                                />
-                                <Progress
-                                    color="info"
-                                    value={50}
-                                />
-                                <Progress
-                                    color="warning"
-                                    value={75}
-                                />
-                                <Progress
-                                    color="danger"
-                                    value="100"
-                                />
+                                <div className="fitness-progress-button-class">
+                                    <h7>100 push-ups</h7>
+                                    <button onClick={()=>setCountOne(countOne+20)}><BsCheck2 /></button>
+                                    <Progress
+                                        color="purple"
+                                        value={countOne}
+                                        className="progressBar"
+                                    />
+                                </div>
+                                <div className="fitness-progress-button-class">
+                                    <h7>100 sit-ups</h7>
+                                    <button onClick={()=>setCountTwo(countTwo+20)}><BsCheck2 /></button>
+                                    <Progress
+                                        color="coral"
+                                        value={countTwo}
+                                        className="progressBar"
+                                    />
+                                </div>
+                                <div className="fitness-progress-button-class">
+                                    <h7>100 squats</h7>
+                                    <button onClick={()=>setCountThree(countThree+20)}><BsCheck2 /></button>
+                                    <Progress
+                                        color="beige"
+                                        value={countThree}
+                                        className="progressBar"
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>

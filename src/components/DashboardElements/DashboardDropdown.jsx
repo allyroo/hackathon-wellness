@@ -26,32 +26,32 @@ const DashboardDropdown = (props) => {
                 <Dropdown.Menu>
                     {pathname.includes('mind')
                         ? <>
-                            <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/nutrition">Nutrition</Dropdown.Item>
+                            <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/nutrition" disabled>Nutrition</Dropdown.Item>
                             <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/fitness">Fitness</Dropdown.Item>
-                            <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/rest">Rest</Dropdown.Item>
+                            <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/rest" disabled>Rest</Dropdown.Item>
                         </>
                         : pathname.includes('fitness')
                             ? <>
-                                <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/nutrition">Nutrition</Dropdown.Item>
-                                <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/rest">Rest</Dropdown.Item>
+                                <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/nutrition" disabled>Nutrition</Dropdown.Item>
+                                <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/rest" disabled>Rest</Dropdown.Item>
                                 <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/mind">Mind</Dropdown.Item>
                             </>
                             : pathname.includes('rest')
                                 ? <>
-                                    <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/nutrition">Nutrition</Dropdown.Item>
+                                    <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/nutrition" disabled>Nutrition</Dropdown.Item>
                                     <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/fitness">Fitness</Dropdown.Item>
                                     <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/mind">Mind</Dropdown.Item>
                                 </>
                                 : pathname.includes('nutrition')
                                     ? <>
                                         <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/fitness">Fitness</Dropdown.Item>
-                                        <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/rest">Rest</Dropdown.Item>
+                                        <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/rest" disabled>Rest</Dropdown.Item>
                                         <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/mind">Mind</Dropdown.Item>
                                     </>
                                     : <>
-                                        <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/nutrition">Nutrition</Dropdown.Item>
+                                        <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/nutrition" disabled>Nutrition</Dropdown.Item>
                                         <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/fitness">Fitness</Dropdown.Item>
-                                        <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/rest">Rest</Dropdown.Item>
+                                        <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/rest" disabled>Rest</Dropdown.Item>
                                         <Dropdown.Item className="pillar-dropdown-menu" href="/dashboard/mind">Mind</Dropdown.Item>
                                     </>
                     }

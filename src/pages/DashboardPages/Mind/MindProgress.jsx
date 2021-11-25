@@ -1,36 +1,42 @@
 import { useState } from 'react';
 import Calendar from 'react-calendar';
+import { Button, Modal, ModalHeader, ModalBody } from 'reactstrap';
 import 'react-calendar/dist/Calendar.css';
 
-import NavBar from "../../../components/NavBar";
-
-import { Nav, Container, Row, Col, } from 'react-bootstrap';
-import { Button, Card, CardBody, CardTitle, CardText } from 'reactstrap';
-import { IoIosSunny } from 'react-icons/io';
-// import { AiOutlineHeart } from "react-icons/ai";
-
 import './MindProgress.css';
-import FlowerIcon from '../../../components/images/flower-icon.svg'
-// import FlowerImage1 from '../../../components/images/flower-growth-progression/flower-1.jpg';
-import FlowerImage1 from './images/flower-1.jpg';
+
+import NavBar from "../../../components/NavBar";
 import Footer from '../../../components/Footer';
 import DashboardNav from '../../../components/DashboardElements/DashboardNav';
 import MindSmartGoal from '../../../components/MindComponents/MindSmartGoal';
+import CompleteImage from '../../../components/images/finish_line.svg';
+import IncompleteImage from '../../../components/images/joyride.svg';
 
 const MindProgress = () => {
     const [value, onChange] = useState(new Date());
     const [count, setCount] = useState(1);
 
+    const [completeIsOpen, setCompleteIsOpen] = useState(false);
+    const [incompleteIsOpen, setIncompleteIsOpen] = useState(false);
+
+    const completeToggle = () => {
+        setCompleteIsOpen(!completeIsOpen);
+    };
+    const incompleteToggle = () => {
+        setIncompleteIsOpen(!incompleteIsOpen);
+    };
+
     const taskComplete = () => {
         if (count < 9) {
             setCount(count + 1)
             console.log(count)
-        } else if (count > 8) {
-            setCount(8);
-            console.log(count)
-            console.log('limit exceeded')
-            // but count keeps going up
         }
+        // else if (count > 8) {
+        //     setCount(8);
+        //     console.log(count)
+        //     console.log('limit exceeded')
+        //     // but count keeps going up
+        // }
     }
     const taskIncomplete = () => {
         if (count > 0) {
@@ -60,8 +66,38 @@ const MindProgress = () => {
                                 />
                                 <div className="progress-button-class">
                                     <h5>Goal Completed?</h5>
-                                    <Button outline onClick={taskComplete} color="success" className="button-completed">Yes</Button>
-                                    <Button outline onClick={taskIncomplete} color="warning" style={{ "marginLeft": "15px" }} className="button-incomplete">No</Button>
+                                    <Button outline onClick={count < 9 ? taskComplete : completeToggle} color="success" className="button-completed">Yes</Button>
+                                    <Button outline onClick={count > 1 ? taskIncomplete : incompleteToggle} color="warning" style={{ "marginLeft": "15px" }} className="button-incomplete">No</Button>
+
+                                    {/* complete popup */}
+                                    <div className="complete-popup-class">
+                                        {/* <Button color="danger" onClick={completeToggle}> yes </Button> */}
+                                        <Modal isOpen={completeIsOpen} contentClassName="complete-popup-modal" backdropClassName="modal-backdrop-class">
+                                            <ModalHeader charCode="Y" toggle={completeToggle}>
+                                                <h5>Goal Completed!</h5>
+                                            </ModalHeader>
+                                            <ModalBody>
+                                                <img src={CompleteImage} alt="finishing-line-svg" />
+                                                <h6>Great job! Keep up the good work!</h6>
+                                            </ModalBody>
+                                        </Modal>
+                                    </div>
+
+                                    {/* incomplete popup */}
+                                    <div className="incomplete-popup-class">
+                                        {/* <Button color="danger" onClick={incompleteToggle}> no </Button> */}
+                                        <Modal isOpen={incompleteIsOpen} contentClassName="incomplete-popup-modal" backdropClassName="modal-backdrop-class">
+                                            <ModalHeader charCode="Y" toggle={incompleteToggle}>
+                                                <h5>Didn't complete your goal today?</h5>
+                                            </ModalHeader>
+                                            <ModalBody>
+                                                <img src={IncompleteImage} alt="finishing-line-svg" />
+                                                <h6>It's okay! Try again tomorrow!</h6>
+                                            </ModalBody>
+                                        </Modal>
+                                    </div>
+
+
                                 </div>
                             </div>
 
@@ -71,35 +107,15 @@ const MindProgress = () => {
                         <div className="flower-growth-box">
                             {/* https://stackoverflow.com/questions/62192049/how-do-i-dynamically-import-images-in-react */}
                             {/* update the alt text to describe the growth progression */}
-                            <img 
+                            <img
                                 src={
-                                    count < 1 
-                                    ? require(`./images/flower-1.jpg`).default 
-                                    : count > 8 
-                                    ? require(`./images/flower-8.jpg`).default 
-                                    : require(`./images/flower-${count}.jpg`).default} 
+                                    count < 1
+                                        ? require(`./images/flower-1.jpg`).default
+                                        : count > 8
+                                            ? require(`./images/flower-8.jpg`).default
+                                            : require(`./images/flower-${count}.jpg`).default}
                                 alt='flower growth progression' />
                         </div>
-
-
-
-
-
-
-
-                        {/* <div className="flower-progress-container">
-                                    <Button outline onClick={() => setCount(count + 1)} color="success" >Yes</Button>
-                                    <div className="flower-graphics" style={{ "height": `${count * 10}%`, "backgroundColor":"#8bd3dd" }}></div>
-                                        <img src={FlowerIcon} alt="flower icon SVG" className="flower-graphics overlay" />
-                                </div> */}
-                        {/* <div className="progress-button-class">
-                                <h5>have you completed today's goal?</h5>
-                                <Button outline onClick={taskComplete} color="success" >Yes</Button>
-                                <Button outline onClick={taskIncomplete} color="danger" style={{ "marginLeft": "15px" }}>No</Button>
-                            </div> */}
-
-
-
                     </div>
                 </div>
 
