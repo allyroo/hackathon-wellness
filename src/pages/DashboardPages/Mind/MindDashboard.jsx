@@ -6,7 +6,6 @@ import './MindDashboard.css';
 
 import NavBar from '../../../components/NavBar';
 import DashboardNav from '../../../components/DashboardElements/DashboardNav';
-import DashboardCards from '../../../components/DashboardElements/DashboardCards';
 import MindSmartGoal from '../../../components/MindComponents/MindSmartGoal';
 import MindResourcesDirectory from '../../../components/MindComponents/MindResourcesDirectory';
 import MindResourceMap from '../../../components/MindComponents/MindResourceMap';
@@ -58,7 +57,7 @@ const MindDashboard = (props) => {
                             </div>
                         <div className="mind-dashboard-bottom-right">
                             <h3>Reflection</h3>
-                            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio, exercitationem veniam eaque eum expedita odit temporibus fuga dolores amet possimus, sed commodi! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam aut vel possimus nesciunt fugiat vitae illo officiis nobis sint rem dolorum, ex laboriosam autem molestiae. Veniam vero error quibusdam rerum!</h6>
+                            <h6>The mind is often understood as a faculty that manifests itself in mental phenomena like sensation, perception, thinking, reasoning, memory, belief, desire, emotion, and motivation. The biggest factor for mental wellbeing. It affects how we think, feel, and act. It also helps determine how we handle stress, relate to others, and make healthy choices. </h6>
                         </div>
                     </div>
                 </div>

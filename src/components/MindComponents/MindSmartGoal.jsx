@@ -14,7 +14,7 @@ const MindSmartGoal = () => {
         goal = "Meditate for 10 minutes before breakfast!"
     } else if (pathname.includes('fitness')) {
         pillar = 'Fitness';
-        goal = "Fitness goal shows here"
+        goal = "Run 20-30 minutes in the morning!"
     } else if (pathname.includes('rest')) {
         pillar = 'Rest';
         goal = "Goal for resting shows here"

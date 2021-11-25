@@ -120,37 +120,57 @@
         background-color: #8bd3dd;
     }
 
-
-
-/* .flower-growth-box {
-    width: 200px;
-    height: 300px;
-    background-repeat: no-repeat;
-    background-size: 100%;
+/* complete popup modal */
+.complete-popup-modal {
+    width: 29vw;
+    height: 51vh;
+    margin: 25vh auto;
+    font-family: monospace;
+    background-color: #abd1c6;
+    color: #001858;
+    border: none;
+}
+.complete-popup-modal h5 {
+    font-weight: bold;
+}
+.complete-popup-modal img {
+    width: 25vw;
+    height: 30vh;
+    padding: 0.5vw;
+}
+/* .modal-backdrop-class {
+    background-color: rgb(255, 255, 255, 0.2);
 } */
-  
-
-/* input:checked + .flower-graphics {
-        background: linear-gradient(to bottom,
-    red 20%, orange 20% 40%, yellow 40% 60%, green 60% 80%, blue 80%);
-    
-} */
-    
-/* .flower-progress-container {
-    width: 15vw;
-    height: 17vh;
-    position: relative;
-    margin-right: 70px;
+.complete-popup-modal h6 {
+    font-size: 1.05rem;
+    text-align: center;
+    margin-top: 3vh;
+    font-weight: bold;
 }
 
-.flower-graphics {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.6;
+/* incomplete popup modal */
+.incomplete-popup-modal {
+    width: 34vw;
+    height: 51vh;
+    margin: 25vh auto;
+    font-family: monospace;
+    background-color: #b8c1ec;
+    color: #232946;
+    border: none;
 }
-.overlay {
-    z-index: 0;
-  } */
+.incomplete-popup-modal h5 {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.incomplete-popup-modal img {
+    width: 32vw;
+    height: 31vh;
+    padding: 0.5vw;
+}
+
+.incomplete-popup-modal h6 {
+    font-size: 1.05rem;
+    text-align: center;
+    margin-top: 3vh;
+    font-weight: bold;
+}

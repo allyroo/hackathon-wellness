@@ -16,12 +16,12 @@ const MindResourcesDirectory = () => {
 
     return (
         <div className="directory-list">
-                                {directory_data.map(place =>
-                                    <a href={`${place.website}`} target="_blank" rel="noopener noreferrer">
-                                        <h6>{place.text}</h6>
-                                    </a>
-                                )}
-                            </div>
+            {directory_data.map(place =>
+                <a href={`${place.website}`} target="_blank" rel="noopener noreferrer">
+                    <h6>{place.text}</h6>
+                </a>
+            )}
+        </div>
     )
 }
 
