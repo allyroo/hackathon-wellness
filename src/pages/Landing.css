@@ -12,7 +12,7 @@ html {
 }
 
 .hero .hero-overlay {
-  background-color: #00175838;
+  background-color: #2e2f3056;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -27,19 +27,65 @@ html {
   flex: 50%;
 }
 .hero-right {
-  text-align: left;
+  text-align: center;
   flex: 50%;
   padding-right: 3em;
 }
 .hero-title {
   padding-top: 3em;
-  font-size: 4vw;
+  font-size: 350%;
   line-height: 1.5em;
-  /* padding-right: 3em; */
+  color: white;
 }
 
-.hero-subtext {
-  width: 40%;
+/* Media Queries */
+/* Desktop */
+@media screen and (max-width: 992px) {
+  .hero-title {
+    position: absolute;
+    right: 10%;
+    top: 30%;
+    font-size: 5vw;
+    color: white;
+  }
+  .hero-subtext {
+    right: 10%;
+    position: absolute;
+    top: 55%;
+  }
+}
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .hero-title {
+    position: absolute;
+    right: 10%;
+    top: 40%;
+    padding-top: 2em;
+    font-size: 30px;
+    line-height: 1em;
+    color: white;
+  }
+  .hero-subtext {
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    padding: 2em;
+  }
+}
+/* Mobile */
+@media screen and (max-width: 600px) {
+  .hero-title {
+    position: absolute;
+    right: 10%;
+    top: 40%;
+    font-weight: 500;
+    font-size: 40px;
+    color: white;
+  }
+  .hero-subtext {
+    position: absolute;
+    top: 50%;
+  }
 }
 
 * {
@@ -136,9 +182,12 @@ img {
 
 .main {
   font-size: 4em;
+  position: absolute;
+  right: 50%;
+  bottom: 0;
 }
 
-.dash {
+/* .dash {
   height: 700px;
   display: flex;
   flex-direction: column;
@@ -146,7 +195,7 @@ img {
   justify-content: center;
   text-align: center;
   color: white;
-}
+} */
 
 .top-title {
   height: 1em;

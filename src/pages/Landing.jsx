@@ -30,24 +30,17 @@ const Landing = () => {
             <div className="hero-container">
               <div className="hero-left"></div>
               <div className="hero-right">
-                <div className="hero-title">
-                  Change your habits, <br />
-                  change your life.
+                <div className="hero-title">Live an Empowered Life</div>
+                
+                <div className="hero-subtext">
+                  Create a personalized plan to track your pillars of wellness.
                 </div>
-                {/* <div className="hero-subtext">
-              Create a personalized plan to track your pillars of wellness.
-            </div> */}
                 {/* <NavLink href="/about">
                   <Button>Learn More</Button>
                 </NavLink> */}
               </div>
             </div>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
+
             <div className="main" id="section1">
               <a href="#section2">
                 <IoIosArrowDown />
@@ -55,10 +48,7 @@ const Landing = () => {
             </div>
           </div>
         </section>
-        {/* breaker bloom text */}
-        <section className="bloom">
-          <div className="top-title"></div>
-        </section>
+
         {/* Who We Are */}
         <div className="main" id="section2">
           <a href="#section1"></a>
@@ -79,7 +69,6 @@ const Landing = () => {
             <img className="dash-img" src={dashboard} />
           </div>
         </section>
-        <div className="break"></div>
 
         {/* Second feature */}
         <section className="definition">
@@ -90,7 +79,6 @@ const Landing = () => {
           </div>
         </section>
 
-        <div className="break"></div>
         {/* Third feature */}
 
         <section className="product">
