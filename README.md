@@ -22,16 +22,27 @@
     - The power of community: Connect with a circle where you can have discussions, share experiences and feel belonged to a tribe. Connect you with local resources - Special events, gatherings, groups
 
 ## Technology Used
-    - Wireframe: Balsamiq
-    - Front-end: ReactJS
-        * reactstrap
-        * react-bootstrap
-        * react-router-dom
-        * react-calendar
-        * react-icons
-    <!-- - Back-end: Express, Node.js, MongoDB -->
+  - Wireframe: Balsamiq ([mohala-wireframe.pdf](https://github.com/allyroo/hackathon-wellness/files/7621674/mohala-wireframe.pdf))
+  - Frontend: ReactJS
+      * reactstrap
+      * react-bootstrap
+      * react-router-dom
+      * react-calendar
+      * react-icons
 
-## Installation
+## Getting Started
+   1. Clone this repository 
+      ```
+      git clone https://github.com/allyroo/hackathon-wellness.git
+      ```
+   2. Install NPM dependencies
+      ```
+      npm install
+      ```
+   3. Start the application
+      ```
+      npm start
+      ```
 
 ## Video/Screenshots
 
