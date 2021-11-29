@@ -22,7 +22,7 @@ const SignupForm = (props) => {
   const onSubmitHandler = (e) => {
     e.preventDefault();
     // create user
-    const newUser = {firstName, lastName, email, password, agree};
+    const newUser = { firstName, lastName, email, password, agree };
     console.log("Welcome", newUser);
     // navigate to login page
     navigate('/login');
@@ -36,6 +36,7 @@ const SignupForm = (props) => {
           First Name
         </Label>
         <Input
+          className="w-100 border-1"
           id="firstName"
           name="firstName"
           placeholder="First Name"
@@ -49,6 +50,7 @@ const SignupForm = (props) => {
           Last Name
         </Label>
         <Input
+          className="w-100 border-1"
           id="lastName"
           name="lastName"
           placeholder="Last Name"
@@ -57,13 +59,11 @@ const SignupForm = (props) => {
           onChange={(e) => setLastName(e.target.value)}
         />
       </FormGroup>
-      {/* </div> */}
       <FormGroup>
         <Label htmlFor="email">
           Email
         </Label>
         <Input
-          className="input-field"
           id="email"
           name="email"
           placeholder="Email"
@@ -77,7 +77,6 @@ const SignupForm = (props) => {
           Password
         </Label>
         <Input
-          className="input-field"
           id="password"
           name="password"
           placeholder="Password"
@@ -91,7 +90,6 @@ const SignupForm = (props) => {
           Verify Password
         </Label>
         <Input
-          className="input-field"
           id="password"
           name="password"
           placeholder="Verify Password"
@@ -101,8 +99,8 @@ const SignupForm = (props) => {
         />
       </FormGroup>
       <FormGroup check>
-        <Input 
-          type="checkbox" 
+        <Input
+          type="checkbox"
           id="agree"
           onChange={checkboxHandler}
         />
@@ -116,7 +114,6 @@ const SignupForm = (props) => {
           Create Account
         </Button>
       </div>
-      {/* link */}
     </Form>
   )
 }
