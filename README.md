@@ -44,13 +44,24 @@
       npm start
       ```
 
-## Video/Screenshots
-
-## Challenges and Future Implementations
-
-## Created By
+## Demo Video
 
 ## Credits
+  - Color palettes: https://www.happyhues.co/
+  - Illustrations: https://undraw.co/
+  - Flower progression illustration: https://www.shutterstock.com/g/Valashko+Maryia
+
+## Future Implementations
+  - User authentication and backend implementation (with Express, NodeJS, and MongoDB)
+  - To make dashboard pages fully responsive in mobile view
+  - Anonymous discussion board
+
+## Created By
+  - [Allyse Arucan](https://github.com/allyroo): UX/UI developer, Health & Wellness Coach
+  - [Liz Vigil](https://github.com/lizmery): Front-End Developer
+  - [Sujung Choi](https://github.com/sujungchoi1): Full Stack Developer
+  - [Bonnie Yee](https://www.linkedin.com/in/bonnieyee/): Project Manager
+  - [Shruthi Reddy](https://www.linkedin.com/in/reddyshruthi/): Business Developmenet, Health & Wellness Coach
 
 <!-- # Getting Started with Create React App
 
