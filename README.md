@@ -3,7 +3,6 @@
   Your one-stop shop for improved wellness. Holistic living isn't one size fits all. We want to be your resource to help you create a lifestyle that nourishes you as a whole. We help you create a holistic lifestyle by approaching all the four pillars (Nutrition, Fitness, Rest, Mind) that are interconnected.
 
 ### Challenges: 
-
   - Health & wellness are generic terms and cover a wide range of categories
   - No single app addresses all of them at one place
   - Difficult to find a customized wellness plan
@@ -12,13 +11,11 @@
   - Local resources often get overlooked.
 
 ### Solutions:
-
-  - Helps you address all the pillars of your health
-  - One stop shop
-  - Better control of your health
-  - Set up goals and track them
-  - Create new habits
-  - The power of community: Connect with a circle where you can have discussions, share experiences and feel belonged to a tribe. Connect you with local resources - Special events, gatherings, groups
+  - Address all the pillars of your health 
+  - Take control of your health
+  - Set up and track goals towards building new habits
+  - Grow alongside a community
+  - Connects you to individualized 1:1 support
 
 ## Technology Used
   - Wireframe: Balsamiq ([mohala-wireframe.pdf](https://github.com/allyroo/hackathon-wellness/files/7621674/mohala-wireframe.pdf))
@@ -67,7 +64,6 @@
 ### Mind - Support Page (Support Chat UI)
 ![Screen Shot 2021-11-29 at 7 33 07 PM](https://user-images.githubusercontent.com/78451440/143981563-9ea08e75-9ba7-44e9-861d-6a6d373f4802.png)
 
-
 ## Credits
   - Color palettes: https://www.happyhues.co/
   - Illustrations: https://undraw.co/
@@ -75,8 +71,9 @@
 
 ## Future Implementations
   - User authentication and backend implementation (with Express, NodeJS, and MongoDB)
-  - To make dashboard pages fully responsive in mobile view
+  - Optimize for mobile web browser
   - Anonymous discussion board
+  - Mood API (Emotion recognition selfie, to initiate the type of affirmations to receive)
 
 ## Created By
   - [Allyse Arucan](https://github.com/allyroo): UX/UI developer, Health & Wellness Coach
