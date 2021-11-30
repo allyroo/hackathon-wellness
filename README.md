@@ -39,7 +39,7 @@
       ```
       npm start
       ```
-   4. To display embedded Google Maps, create a .env file in the root directory with your Google Maps API Key (For more information, visit [Embedding a map](https://developers.google.com/maps/documentation/embed/embedding-map)):
+   * To display the embedded Google Maps, create a .env file in the root directory with your Google Maps API Key (For more information, visit [Embedding a map](https://developers.google.com/maps/documentation/embed/embedding-map)):
       ```
       # in .env file
       REACT_APP_GOOGLE_MAPS_API_KEY="YOUR_API_KEY"
