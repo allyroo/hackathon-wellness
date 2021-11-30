@@ -13,7 +13,7 @@ const Testimonials = () => {
         <div className="testimonials-row">
           <div className="testimonials-col">
             <div className="testimonials-img-container">
-              <img src={woman2} alt="" className="testimonials-img" />
+              <img src={woman2} alt="woman" className="testimonials-img" />
             </div>
             <div className="testimonial-quote">
               <q>
