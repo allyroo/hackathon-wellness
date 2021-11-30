@@ -79,7 +79,7 @@ https://user-images.githubusercontent.com/73366673/143992303-f77de813-8d8d-4d9d-
 
 ## Future Implementations
   - User authentication and backend implementation (with Express, NodeJS, and MongoDB)
-  - Optimize for mobile web browser (Some pages are optimized on only Chrome and Safari Desktop view)
+  - Optimize for mobile web browser 
   - Anonymous discussion board
   - Mood API (Emotion recognition selfie, to initiate the type of affirmations to receive)
 
