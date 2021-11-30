@@ -70,6 +70,13 @@
 
 .testimonials-img {
     border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.testimonials-img img {
+    width: 100%;
+    height: 100%;
 }
 
 .join-btn {
