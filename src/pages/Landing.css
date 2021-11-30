@@ -1,20 +1,20 @@
-html {
-  scroll-behavior: smooth;
+body {
+  background-color: #f1f1f1;
 }
-
+.hero-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 .hero {
   font-family: "Poppins", sans-serif;
   background: url("../components/images/hero.jpg") no-repeat center/cover;
   background-size: cover;
   background-position: center;
   height: 100vh;
-  width: 100vw;
 }
-
 .hero .hero-overlay {
   background-color: #2e2f3056;
   height: 100vh;
-  width: 100vw;
   display: flex;
   flex-direction: column;
   color: rgb(255, 255, 255);
@@ -22,76 +22,31 @@ html {
 .hero-container {
   display: flex;
   flex-direction: row;
+  height: 100%;
 }
 .hero-left {
   flex: 50%;
 }
 .hero-right {
-  text-align: center;
+  text-align: right;
   flex: 50%;
   padding-right: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .hero-title {
-  padding-top: 3em;
-  font-size: 350%;
+  font-size: 64px;
+  margin-bottom: 16px;
   line-height: 1.5em;
   color: white;
 }
-
-/* Media Queries */
-/* Desktop */
-@media screen and (max-width: 992px) {
-  .hero-title {
-    position: absolute;
-    right: 10%;
-    top: 30%;
-    font-size: 5vw;
-    color: white;
-  }
-  .hero-subtext {
-    right: 10%;
-    position: absolute;
-    top: 55%;
-  }
+.hero-subtext {
+  font-size: 24px;
 }
-/* Tablet */
-@media screen and (max-width: 768px) {
-  .hero-title {
-    position: absolute;
-    right: 10%;
-    top: 40%;
-    padding-top: 2em;
-    font-size: 30px;
-    line-height: 1em;
-    color: white;
-  }
-  .hero-subtext {
-    position: absolute;
-    top: 50%;
-    width: 40%;
-    padding: 2em;
-  }
-}
-/* Mobile */
-@media screen and (max-width: 600px) {
-  .hero-title {
-    position: absolute;
-    right: 10%;
-    top: 40%;
-    font-weight: 500;
-    font-size: 40px;
-    color: white;
-  }
-  .hero-subtext {
-    position: absolute;
-    top: 50%;
-  }
-}
-
 * {
   box-sizing: border-box;
 }
-
 .bloom {
   height: 100%;
   letter-spacing: 5px;
@@ -105,7 +60,6 @@ html {
   align-items: center;
   justify-content: center;
   text-align: center;
-  display: flex;
   vertical-align: middle;
 }
 .product-text {
@@ -122,7 +76,6 @@ html {
   vertical-align: middle;
   font-size: 0.7em;
 }
-
 .product-head {
   font-family: "Poppins", sans-serif;
   width: 60%;
@@ -143,19 +96,12 @@ html {
   justify-content: center;
   height: 650px;
   flex: 50%;
+  object-fit: cover;
 }
-@media (max-width: 800px) {
-  .product-text,
-  .prodcut-img {
-    flex: 100%;
-  }
-}
-
 .break {
   height: 20px;
   background-color: white;
 }
-
 .dash-container {
   display: flex;
   flex-wrap: wrap;
@@ -168,25 +114,28 @@ html {
   background-color: #ffffff;
   text-align: center;
   flex: 50%;
+  object-fit: cover;
 }
-
 .mobile-img {
   width: 100%;
   height: 100%;
 }
-
 img {
   width: 50%;
   height: 100%;
 }
-
 .main {
   font-size: 4em;
   position: absolute;
   right: 50%;
   bottom: 0;
 }
-
+.arrow-down {
+  color: #fff;
+}
+.arrow-down:hover {
+  color: #fff;
+}
 /* .dash {
   height: 700px;
   display: flex;
@@ -196,7 +145,6 @@ img {
   text-align: center;
   color: white;
 } */
-
 .top-title {
   height: 1em;
 }
@@ -204,12 +152,10 @@ img {
   font-family: "Poppins", sans-serif;
   font-size: 2em;
 }
-
 /* .categories {
   display: flex;
   align-items: center;
 } */
-
 .definition {
   background: url("../components/images/branch.png") no-repeat right;
   height: 40em;
@@ -217,11 +163,11 @@ img {
 }
 
 .mohala {
-  font-size: 20vw;
+  font-size: 128px;
   text-align: left;
+  padding-left: 4vw;
   color: #f79abd;
 }
-
 .mohala-sub {
   font-size: 3em;
   padding-left: 4vw;
@@ -239,14 +185,12 @@ img {
 
 .how-to {
   background-color: #fff;
-  height: 60em;
   color: white;
 }
 
 .product-text p {
   width: 60%;
 }
-
 .how-title {
   padding-top: 100px;
   padding-bottom: 1em;
@@ -258,12 +202,11 @@ img {
   letter-spacing: 2px;
 }
 .how-subtitle {
-  padding-top: 100px;
-  padding-bottom: 2em;
+  padding-top: 32px;
   font-family: "Poppins", sans-serif;
-  font-size: 3vw;
+  font-size: 32px;
   text-align: center;
-  color: #001858;
+  color: #fff;
   letter-spacing: 2px;
 }
 
@@ -276,59 +219,95 @@ img {
   flex-wrap: wrap;
   width: 100%;
   background-color: #081e59e2;
-  padding: 1em;
-  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   justify-content: center;
+  grid-gap: 16px;
 }
 
-.tracker-img {
-  padding: 2em;
-  border-radius: 5px;
-  flex: 33.33%;
-  height: 30vh;
-  width: 30vw;
-  background-color: #fff;
-  border-radius: 50%;
-}
-.community-img {
-  padding: 2em;
-  border-radius: 5px;
-  flex: 33.33%;
-  height: 30vh;
-  width: 30vw;
-  background-color: #fff;
-  border-radius: 50%;
-}
-.support-img {
-  padding: 2em;
-  border-radius: 5px;
-  flex: 33.33%;
-  height: 30vh;
-  width: 30vw;
-  background-color: #fff;
-  border-radius: 50%;
+.pillar-column {
+  flex-basis: calc(33.3333333% - 16px);
 }
 
+.pillar-circle {
+  background-color: #fff;
+  border-radius: 50%;
+  padding-bottom: 100%;
+  position: relative;
+}
+
+.pillar-img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 hr.solid {
   border-top: 1em dashed #081e59e2;
 }
-
 .tail {
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 40em;
   background-color: #081e599d;
-  height: 60vh;
 
   font-family: "Poppins", sans-serif;
 }
 
 .tail-title {
   padding: 4em;
-  font-size: 4vw;
+  font-size: 56px;
   color: white;
+}
+.tail-title-text {
+  padding-bottom: 2rem;
 }
 .tail-subtext {
   font-size: 1em;
+}
+@media screen and (max-width: 1024px) {
+  .hero-title {
+    font-size: 48px;
+  }
+  .hero-subtext {
+    font-size: 18px;
+  }
+  .how-subtitle {
+    font-size: 24px;
+  }
+  .tail-title {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pillar-img-container {
+    display: block;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .pillar-column {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
+    max-width: 500px;
+  }
+  .hero-title {
+    font-size: 36px;
+  }
+  .product-text,
+  .product-img {
+    flex: 100%;
+  }
+  .product {
+    display: flex;
+  }
+  .definition {
+    background-image: none;
+  }
+
+  .mohala {
+    font-size: 80px;
+  }
 }
