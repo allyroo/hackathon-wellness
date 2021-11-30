@@ -74,7 +74,8 @@ https://user-images.githubusercontent.com/73366673/143992303-f77de813-8d8d-4d9d-
 ## Credits
   - Color palettes: https://www.happyhues.co/
   - Illustrations: https://undraw.co/
-  - Flower progression illustration: https://www.shutterstock.com/g/Valashko+Maryia
+  - Sunflower illustration: https://www.shutterstock.com/g/Valashko+Maryia
+  - Flower code on dashboard: https://codepen.io/lili/pen/YZQKVW
 
 ## Future Implementations
   - User authentication and backend implementation (with Express, NodeJS, and MongoDB)
