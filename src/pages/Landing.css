@@ -210,6 +210,13 @@ img {
   letter-spacing: 2px;
 }
 
+.how-description {
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+  padding-top: 12px;
+}
+
 .pillar {
   padding-bottom: 75px;
 }
@@ -220,7 +227,7 @@ img {
   width: 100%;
   background-color: #081e59e2;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   justify-content: center;
   grid-gap: 16px;
 }

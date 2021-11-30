@@ -42,7 +42,7 @@
   border: rgb(185, 179, 179);
 }
 .pill-img:hover {
-  border: rgb(230, 117, 117) double 120px;
+  border: #f79abd double 120px;
 }
 
 .pill {

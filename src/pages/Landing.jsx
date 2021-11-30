@@ -27,10 +27,10 @@ const Landing = () => {
             <div className="hero-container">
               <div className="hero-left"></div>
               <div className="hero-right">
-                <div className="hero-title">THE EMPOWERED YOU</div>
+                <div className="hero-title">THE&nbsp;EMPOWERED&nbsp;YOU</div>
 
                 <div className="hero-subtext">
-                  Create a personalized plan to track
+                  Create&nbsp;a&nbsp;personalized&nbsp;plan&nbsp;to&nbsp;track
                   your&nbsp;pillars&nbsp;of&nbsp;wellness.
                 </div>
                 <NavLink href="/about">
@@ -117,9 +117,9 @@ const Landing = () => {
                 </div>
                 <div className="how-subtitle">Connect with Community</div>
                 <div className="how-description">
-                  We want to remind you that you are not alone. The power of
-                  community to create wellness is far greater than any
-                  physician, clinic, or hospital.
+                  It takes a village to raise a child. We want to remind you
+                  that you are not alone. There is no replacement to being
+                  supported by those who share similar goals.
                 </div>
               </div>
 
