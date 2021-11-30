@@ -52,7 +52,7 @@
     content: '';
     width: 100%;
     height: 4px;
-    background: linear-gradient(to right, #8bd3dd, #8bd3dd);
+    background: linear-gradient(to left, #8bd3dd, #8bd3dd);
     display: block;
 }
 
