@@ -25,7 +25,7 @@ const SignupForm = (props) => {
     const newUser = { firstName, lastName, email, password, agree };
     console.log("Welcome", newUser);
     // navigate to login page
-    navigate('/login');
+    navigate('/selectpillar');
   }
 
   return (
