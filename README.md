@@ -55,6 +55,8 @@
 ![Screen Shot 2021-11-29 at 7 31 33 PM](https://user-images.githubusercontent.com/78451440/143981394-f7718242-8870-468c-950c-fb11b41f9a40.png)
 ### Mind - Progress Page
 ![screencapture-localhost-3001-dashboard-mind-progress-2021-11-29-19_31_55](https://user-images.githubusercontent.com/78451440/143981427-9d39e8cd-9d60-4119-863e-61a96c2104f5.png)
+### Mind - Progress Page (Flower Growing UI)
+https://user-images.githubusercontent.com/73366673/143992303-f77de813-8d8d-4d9d-ae06-a9b3a401adbb.mov
 ### Mind - Community Page
 ![screencapture-localhost-3001-dashboard-mind-community-2021-11-29-19_32_06](https://user-images.githubusercontent.com/78451440/143981450-41942ba0-2cf9-476a-a895-900f2e344e7f.png)
 ### Mind - Resources Page
@@ -71,12 +73,12 @@
 
 ## Future Implementations
   - User authentication and backend implementation (with Express, NodeJS, and MongoDB)
-  - Optimize for mobile web browser
+  - Optimize for mobile web browser (Some pages are optimized on only Chrome and Safari Desktop view)
   - Anonymous discussion board
   - Mood API (Emotion recognition selfie, to initiate the type of affirmations to receive)
 
 ## Created By
-  - [Allyse Arucan](https://github.com/allyroo): UX/UI developer, Health & Wellness Coach
+  - [Allyse Arucan](https://github.com/allyroo): UX/UI Developer, Health & Wellness Coach
   - [Liz Vigil](https://github.com/lizmery): Front-End Developer
   - [Sujung Choi](https://github.com/sujungchoi1): Full Stack Developer
   - [Bonnie Yee](https://www.linkedin.com/in/bonnieyee/): Project Manager
